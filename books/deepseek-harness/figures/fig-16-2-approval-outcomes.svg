@@ -1,0 +1,31 @@
+<svg viewBox="0 0 680 314" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 41：审批的四个结果，只有一个放行</title>
+<desc>approval/request 经瀑布式分派后只有四种结果：allowed-once（授权所问的那一个操作）、rejected、cancelled、unavailable。只有 allowed-once 放行；缺失或抛错的应答方归为 unavailable，同样拒绝。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="108" width="176" height="68" rx="8" fill="#1B3A6B"/>
+<text x="128" y="132" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">approval/request</text>
+<text x="128" y="152" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">瀑布式分派</text>
+<rect x="300" y="20" width="336" height="42" rx="6" fill="#0F6E56"/>
+<text x="318" y="41" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">allowed-once</text>
+<text x="620" y="41" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="end" dominant-baseline="central">唯一放行</text>
+<path d="M218,142 C258,142 262,41 296,41" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="300" y="76" width="336" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="318" y="97" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">rejected</text>
+<text x="620" y="97" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">拒绝</text>
+<path d="M218,142 C258,142 262,97 296,97" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="300" y="132" width="336" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="318" y="153" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">cancelled</text>
+<text x="620" y="153" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">撤回</text>
+<path d="M218,142 C258,142 262,153 296,153" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="300" y="188" width="336" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="318" y="209" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">unavailable</text>
+<text x="620" y="209" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">无人应答 → 拒绝</text>
+<path d="M218,142 C258,142 262,209 296,209" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="258" width="596" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="273.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">四个结果里只有 allowed-once 放行；没有应答复方，不等于放行。</text>
+<text x="40" y="300" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">ApprovalOutcome 是闭合枚举，失败时拒绝（fail closed）· 简化自 官方审批说明</text>
+</svg>

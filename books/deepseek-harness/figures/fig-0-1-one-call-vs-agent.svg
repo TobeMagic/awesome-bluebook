@@ -1,0 +1,45 @@
+<svg viewBox="0 0 680 340" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 1：一次调用和一个能干活的 agent，差的是外面那一圈</title>
+<desc>左边是一次调用：一段文本进去，一段文本出来，中间没有任何别的环节。右边是一个能干活的 agent：模型在中间，外面围着循环、工具、上下文、权限、状态、适配六件事，每一件都用细线连回模型。两边的差别不在模型本身，而在外面那一圈。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="24" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">两种东西，名字只差一个词</text>
+<rect x="40" y="44" width="250" height="232" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="68" font-size="12" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">① 一次调用</text>
+<rect x="56" y="104" width="80" height="34" rx="6" fill="#EDF2F9"/>
+<text x="96" y="121" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">一段文本</text>
+<path d="M140,121 H196" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="200" y="104" width="74" height="34" rx="6" fill="#EDF2F9"/>
+<text x="237" y="121" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">一段文本</text>
+<text x="56" y="172" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">一问一答，一步就完。</text>
+<text x="56" y="196" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">字进去，字出来。</text>
+<text x="56" y="232" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">文本之外的事，它不管。</text>
+<rect x="310" y="44" width="330" height="232" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="326" y="68" font-size="12" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">② 一个能干活的 agent</text>
+<rect x="433.0" y="99.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="475" y="112" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">循环</text>
+<path d="M475,112 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<rect x="315.0" y="99.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="357" y="112" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">工具</text>
+<path d="M357,112 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<rect x="551.0" y="99.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="593" y="112" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">上下文</text>
+<path d="M593,112 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<rect x="315.0" y="239.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="357" y="252" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">权限</text>
+<path d="M357,252 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<rect x="551.0" y="239.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="593" y="252" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">状态</text>
+<path d="M593,252 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<rect x="433.0" y="239.0" width="84" height="26" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="475" y="252" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">适配</text>
+<path d="M475,252 L475,182" fill="none" stroke="#D8D6CD" stroke-width="0.9"/>
+<circle cx="475" cy="182" r="38" fill="#1B3A6B"/>
+<text x="475" y="182" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">模型</text>
+<rect x="40" y="292" width="600" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="304.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">模型只负责给主意。去动手、去记、去刹车的是外面那一圈。</text>
+<text x="58" y="324.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">差的那个词，就是这一圈。</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 394" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 3：四个难处和它们各自引出的设计应对</title>
+<desc>左栏是四个难处。能力一直在变，对应拼装和实现分开。模型随时会换，对应找能力靠名字而不靠位置。环境不可信，对应边界显式、挡不住就往拒绝倒。任务又长又会断，对应事实只留一份、其余都算得出。四条应对的两栏一一对齐。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="24" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">四个难处，四条应对</text>
+<text x="40" y="52" font-size="11" font-weight="600" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">难在哪</text>
+<text x="380" y="52" font-size="11" font-weight="600" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">设计的应对</text>
+<rect x="40" y="68" width="260" height="46" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="91" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">能力一直在变</text>
+<path d="M306,91 H372" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="380" y="68" width="260" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="398" y="91" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">拼装和实现分开</text>
+<rect x="40" y="130" width="260" height="46" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="153" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">模型随时会换</text>
+<path d="M306,153 H372" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="380" y="130" width="260" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="398" y="153" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">找能力靠名字，不靠位置</text>
+<rect x="40" y="192" width="260" height="46" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="215" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">环境不可信</text>
+<path d="M306,215 H372" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="380" y="192" width="260" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="398" y="215" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">边界显式，挡不住就往拒绝倒</text>
+<rect x="40" y="254" width="260" height="46" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="277" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">任务又长又会断</text>
+<path d="M306,277 H372" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<rect x="380" y="254" width="260" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="398" y="277" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">事实只留一份，其余都算得出</text>
+<rect x="40" y="324" width="600" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="336.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">四条应对各干各的，方向是同一个：把会变的部分挪出主体。</text>
+<text x="58" y="356.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">下面五节讲的五条主张，都在做这件事。</text>
+</svg>

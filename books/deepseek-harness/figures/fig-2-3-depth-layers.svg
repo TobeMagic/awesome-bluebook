@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 286" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 8：依赖深度分层</title>
+<desc>五层按依赖深度排列：深度 14 的装配顶层只有 bundle/base 一个包、94 行；深度 12–13 的组合层 20 个包；深度 4–11 的中间层 144 个包；深度 1–3 的薄层 54 个包；深度 0 的叶子层 98 个包，它们不依赖任何内部包。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<text x="40" y="20" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">离根的距离</text>
+<text x="200" y="20" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">条长 = 包数（最长的 144 个包）</text>
+<text x="40" y="55" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">深度 14</text>
+<text x="40" y="68" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">装配顶层</text>
+<rect x="200" y="46" width="8" height="18" rx="3" fill="#1B3A6B"/>
+<text x="218" y="55" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">bundle/base · 94 行</text>
+<text x="40" y="101" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">深度 12–13</text>
+<text x="40" y="114" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">组合层</text>
+<rect x="200" y="92" width="52.0" height="18" rx="3" fill="#4E74B4"/>
+<text x="262.0" y="101" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">20 个包</text>
+<text x="40" y="147" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">深度 4–11</text>
+<text x="40" y="160" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">中间层</text>
+<rect x="200" y="138" width="374.40000000000003" height="18" rx="3" fill="#85B7EB"/>
+<text x="584.4000000000001" y="147" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">144 个包</text>
+<text x="40" y="193" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">深度 1–3</text>
+<text x="40" y="206" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">薄层</text>
+<rect x="200" y="184" width="140.4" height="18" rx="3" fill="#A9C4E4"/>
+<text x="350.4" y="193" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">54 个包</text>
+<text x="40" y="239" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">深度 0</text>
+<text x="40" y="252" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">叶子</text>
+<rect x="200" y="230" width="254.8" height="18" rx="3" fill="#0F6E56"/>
+<text x="464.8" y="239" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">98 个包 · 谁都不依赖</text>
+<path d="M188,54 V239" fill="none" stroke="#B4B2A9" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="176" y="170" font-size="11" fill="#5F5E5A" text-anchor="middle" transform="rotate(-90 176 170)">越往上越容易被替换</text>
+<text x="40" y="268" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">深度 = 从该包向上走到根要经过的层数 · 统计含 dependencies 与 peerDependencies</text>
+</svg>

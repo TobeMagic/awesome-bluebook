@@ -1,0 +1,53 @@
+<svg viewBox="0 0 680 410" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 47：五道检验的过关路径</title>
+<desc>决策树从顶上「能力按 key 分发」开始，逐道向下。每道一个判断框，不合规就侧向停在一个阶段框，阶段框按已过道数标出所处阶段。五道全过，落在「过 5 道 · 热插拔成立」。前一道是后一道的地基，任何一道不过就卡在那一段。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="30" width="300" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="50" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">检验一 · 能力按 key 分发</text>
+<path d="M342,50 H368" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="355" y="37" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不合规</text>
+<rect x="372" y="30" width="276" height="40" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="390" y="50" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">过 0 道 · 单体加钩子</text>
+<path d="M190,70 V88" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="198" y="80" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">通过</text>
+<rect x="40" y="90" width="300" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="110" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">检验二 · 依赖声明式</text>
+<path d="M342,110 H368" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="355" y="97" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不合规</text>
+<rect x="372" y="90" width="276" height="40" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="390" y="110" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">过 1 道 · 单体加钩子</text>
+<path d="M190,130 V148" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="198" y="140" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">通过</text>
+<rect x="40" y="150" width="300" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="170" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">检验三 · 副作用可撤销</text>
+<path d="M342,170 H368" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="355" y="157" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不合规</text>
+<rect x="372" y="150" width="276" height="40" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="390" y="170" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">过 2 道 · 能力能换，顺序还要人排</text>
+<path d="M190,190 V208" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="198" y="200" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">通过</text>
+<rect x="40" y="210" width="300" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="230" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">检验四 · 真源唯一</text>
+<path d="M342,230 H368" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="355" y="217" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不合规</text>
+<rect x="372" y="210" width="276" height="40" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="390" y="230" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">过 3 道 · 能干净地卸，状态不唯一</text>
+<path d="M190,250 V268" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="198" y="260" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">通过</text>
+<rect x="40" y="270" width="300" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="290" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">检验五 · 信号绑上下文</text>
+<path d="M342,290 H368" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="355" y="277" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不合规</text>
+<rect x="372" y="270" width="276" height="40" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="390" y="290" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">过 4 道 · 状态能重建，信号不可信</text>
+<path d="M190,310 V326" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="198" y="318" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">通过</text>
+<rect x="40" y="328" width="300" height="40" rx="8" fill="#0F6E56"/>
+<text x="190" y="348" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">过 5 道 · 热插拔成立</text>
+<text x="372" y="348" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">删掉一个插件，系统回到装它之前的样子</text>
+<text x="40" y="396" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">从顶上那道起逐道向下；前一道是后一道的地基，任何一道不过就卡在那一段 · 本书原创</text>
+</svg>

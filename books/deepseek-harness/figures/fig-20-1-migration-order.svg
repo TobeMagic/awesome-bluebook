@@ -1,0 +1,41 @@
+<svg viewBox="0 0 680 400" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 51：迁移步骤的依赖顺序</title>
+<desc>起点是①服务容器，能力按 key 分发。它带出三条分支：②inject 声明、③effect 与 disposer、④单一真源。②之后才谈得上三层叠加与按 id 整体替换，③之后才谈得上热替换。末尾是⑤让测试走生产那条装配路径，用虚线指向前面各框。末尾那步不产出新能力，只让前面的成果可信。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="225" y="26" width="230" height="52" rx="8" fill="#1B3A6B"/>
+<text x="243" y="45" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">① 服务容器</text>
+<text x="243" y="65" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="start" dominant-baseline="central">能力按 key 分发 · §04</text>
+<rect x="40" y="110" width="190" height="58" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="54" y="132" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">② inject 声明</text>
+<text x="54" y="153" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">系统推出加载顺序 · §05</text>
+<rect x="245" y="110" width="190" height="58" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="259" y="132" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">③ effect 与 disposer</text>
+<text x="259" y="153" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">每个注册配一个撤销 · §07</text>
+<rect x="450" y="110" width="190" height="58" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="464" y="132" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">④ 单一真源</text>
+<text x="464" y="153" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">只存事件，状态当投影 · §14</text>
+<path d="M340,78 C340,94 135,90 135,104" fill="none" stroke="#1B3A6B" stroke-width="1.3" marker-end="url(#arb)"/>
+<path d="M340,78 V104" fill="none" stroke="#1B3A6B" stroke-width="1.3" marker-end="url(#arb)"/>
+<path d="M340,78 C340,94 545,90 545,104" fill="none" stroke="#1B3A6B" stroke-width="1.3" marker-end="url(#arb)"/>
+<rect x="40" y="200" width="190" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="54" y="219" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">三层叠加</text>
+<text x="54" y="238" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">按 id 整体替换 · §09</text>
+<rect x="245" y="200" width="190" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="259" y="219" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">热替换</text>
+<text x="259" y="238" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">卸掉旧注册后换实现</text>
+<path d="M135,168 V194" fill="none" stroke="#1B3A6B" stroke-width="1.3" marker-end="url(#arb)"/>
+<path d="M340,168 V194" fill="none" stroke="#1B3A6B" stroke-width="1.3" marker-end="url(#arb)"/>
+<rect x="40" y="286" width="608" height="52" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="306" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">⑤ 让测试走生产那条装配路径 · §17</text>
+<text x="58" y="328" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">排在末尾不是因为最难，是因为它管前四步可不可信</text>
+<path d="M135,286 V256" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<path d="M340,286 V256" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<path d="M545,286 V172" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<text x="352" y="276" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">虚线 = 让前面各步可验</text>
+<text x="40" y="366" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">五步顺序由依赖推出，不能乱序；第二步与第三步可并行，但都建在第一步之上。</text>
+<text x="40" y="386" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">本书原创 · 回扣 §04 / §05 / §07 / §09 / §14 / §17</text>
+</svg>

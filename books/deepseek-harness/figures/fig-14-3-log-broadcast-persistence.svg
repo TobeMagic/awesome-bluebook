@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 404" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 36：内存日志、广播与持久化是三条不同的路</title>
+<desc>先画一个「内存日志」框，一次 Session.append 进去后分三条出线：session/event 是提交后广播、标注「可丢」；session/flush 是 awaited 并行屏障、标注「会等」；持久化后端标注「另一 seam」。核心反差：一次 append 只动内存日志，三条路互不相同，所以观察者再慢也拖不住写入。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="340" y="20" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">Session.append 一次</text>
+<path d="M340,30 L340,56" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="240" y="60" width="200" height="64" rx="10" fill="#1B3A6B"/>
+<text x="340" y="84" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">内存日志</text>
+<text x="340" y="106" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">唯一真源</text>
+<path d="M340,126 C340,172 200,168 140,204" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<path d="M340,126 V204" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M340,126 C340,172 480,168 540,204" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<text x="132" y="182" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">可丢</text>
+<text x="350" y="182" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">会等</text>
+<text x="500" y="182" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">另一 seam</text>
+<rect x="40" y="210" width="190" height="96" rx="10" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="56" y="246" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">session/event</text>
+<text x="56" y="272" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">提交后广播 · 可丢</text>
+<rect x="245" y="210" width="190" height="96" rx="10" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="261" y="246" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">session/flush</text>
+<text x="261" y="272" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">awaited 屏障 · 会等</text>
+<rect x="450" y="210" width="190" height="96" rx="10" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="466" y="246" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">持久化后端</text>
+<text x="466" y="272" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">另一 seam，落盘归它</text>
+<rect x="40" y="320" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="335.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">一次 append 只动内存日志；三条路互不相同，观察者再慢也拖不住写入。</text>
+<text x="40" y="370" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">session/event 是提交后 fire-and-forget 广播，回调抛了不影响这次提交。</text>
+<text x="40" y="388" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">session/flush 是 awaited 并行屏障，调用方等所有监听器落完盘</text>
+</svg>

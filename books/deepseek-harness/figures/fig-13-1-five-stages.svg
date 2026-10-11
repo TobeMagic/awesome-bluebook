@@ -1,0 +1,54 @@
+<svg viewBox="0 0 680 300" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 31：一次工具调用要穿过的五段</title>
+<desc>一条横向链 pre → guards → execute → post → finalize。上方三条弧线标出三个 waterfall：tools/pre-execute、tools/execute、tools/post-execute；下方标出两个非 waterfall 的收紧点：guards 只能收紧、finalize 是定稿。每段下方是它的输入与输出，关键类型是 PreToolDecision、工具函数体、ToolExecutionResult。核心反差：能改写这次调用的只有三个 waterfall。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="60" width="104" height="54" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="92" y="82" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">登记</text>
+<text x="92" y="102" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">先记账，后动手</text>
+<path d="M62,168 L122,168" fill="none" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="92" y="188" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">只记账</text>
+<text x="92" y="204" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不拦人</text>
+<text x="92" y="134" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">有人想拧这颗</text>
+<text x="92" y="152" font-size="10.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">账上落一笔</text>
+<rect x="169" y="60" width="104" height="54" rx="8" fill="#1B3A6B"/>
+<text x="221" y="82" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">审查</text>
+<text x="221" y="102" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">安检一道接一道</text>
+<path d="M177,58 Q221,8 265,58" fill="none" stroke="#0F6E56" stroke-width="1.4"/>
+<text x="221" y="20" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">只拦不放 · 只能更严</text>
+<text x="221" y="134" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">账上那颗</text>
+<text x="221" y="152" font-size="10.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">拦下 或 原样上送</text>
+<rect x="298" y="60" width="104" height="54" rx="8" fill="#1B3A6B"/>
+<text x="350" y="82" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">放行</text>
+<text x="350" y="102" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">把门的点头才放</text>
+<path d="M306,58 Q350,8 394,58" fill="none" stroke="#0F6E56" stroke-width="1.4"/>
+<text x="350" y="20" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">点一次头只放这一颗</text>
+<text x="350" y="134" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">审完的那颗</text>
+<text x="350" y="152" font-size="10.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">放 或 拒</text>
+<rect x="427" y="60" width="104" height="54" rx="8" fill="#1B3A6B"/>
+<text x="479" y="82" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">执行</text>
+<text x="479" y="102" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">真正动手</text>
+<path d="M435,58 Q479,8 523,58" fill="none" stroke="#0F6E56" stroke-width="1.4"/>
+<text x="479" y="20" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">递家伙的管计时催工</text>
+<text x="479" y="134" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">放了行的那颗</text>
+<text x="479" y="152" font-size="10.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">拧完的结果</text>
+<rect x="556" y="60" width="104" height="54" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="608" y="82" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">落账</text>
+<text x="608" y="102" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">盖章定稿</text>
+<path d="M578,168 L638,168" fill="none" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="608" y="188" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">只定稿</text>
+<text x="608" y="204" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">章一落就冻结</text>
+<text x="608" y="134" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">拧完的结果</text>
+<text x="608" y="152" font-size="10.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">定稿的回话</text>
+<path d="M146,87 L167,87" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M275,87 L296,87" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M404,87 L425,87" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M533,87 L554,87" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="40" y="220" width="608" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="232.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">越靠前越能决定这颗拧不拧，越靠后越只能决定看到什么；</text>
+<text x="58" y="252.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">登记只记账，落账只定稿，章一落就冻结。</text>
+<text x="40" y="286" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">灰字为进，蓝字为出 · 简化自 官方工具流水线文档</text>
+</svg>

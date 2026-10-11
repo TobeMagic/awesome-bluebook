@@ -1,0 +1,37 @@
+<svg viewBox="0 0 680 350" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 12：内核四件套的依赖关系</title>
+<desc>agent 依赖 llm、tools 和 session；tools 也依赖 session。四个节点标注被依赖包数：session 101、llm 94、agent 76、tools 55。session 位于最底部，被所有组件依赖。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<text x="40" y="24" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">按代码量排</text>
+<text x="360" y="24" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">按被依赖排</text>
+<text x="40" y="58.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">门脸（界面）</text>
+<rect x="150" y="48" width="190" height="20" rx="3" fill="#1B3A6B"/>
+<text x="40" y="98.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">工具箱</text>
+<rect x="150" y="88" width="44" height="20" rx="3" fill="#85B7EB"/>
+<text x="40" y="138.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">翻译官</text>
+<rect x="150" y="128" width="40" height="20" rx="3" fill="#85B7EB"/>
+<text x="40" y="178.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">花名册</text>
+<rect x="150" y="168" width="36" height="20" rx="3" fill="#85B7EB"/>
+<text x="40" y="218.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">流水账</text>
+<rect x="150" y="208" width="32" height="20" rx="3" fill="#85B7EB"/>
+<text x="360" y="58.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">流水账</text>
+<rect x="470" y="48" width="176" height="20" rx="3" fill="#0F6E56"/>
+<text x="360" y="98.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">翻译官</text>
+<rect x="470" y="88" width="150" height="20" rx="3" fill="#5DCAA5"/>
+<text x="360" y="138.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">花名册</text>
+<rect x="470" y="128" width="118" height="20" rx="3" fill="#5DCAA5"/>
+<text x="360" y="178.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">工具箱</text>
+<rect x="470" y="168" width="92" height="20" rx="3" fill="#5DCAA5"/>
+<text x="360" y="218.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">门脸（界面）</text>
+<rect x="470" y="208" width="14" height="20" rx="3" fill="#D8D6CD"/>
+<text x="644" y="218.0" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">排不进前列</text>
+<line x1="350" y1="40" x2="350" y2="232" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="3 3"/>
+<path d="M344,58 C400,96 424,160 462,206" fill="none" stroke="#0F6E56" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<text x="340" y="258" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">同一个「门脸」，换个排法就垫底</text>
+<rect x="40" y="278" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="293" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">代码量不等于重要性：按工程量排门脸最大，按被依赖排流水账最靠前。</text>
+<text x="40" y="330" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">条长只表相对多少，不标数字 · 被依赖 = 有多少东西离不开它</text>
+</svg>

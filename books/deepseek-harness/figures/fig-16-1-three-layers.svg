@@ -1,0 +1,43 @@
+<svg viewBox="0 0 680 362" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 40：三道闸各挡什么、挡不住什么</title>
+<desc>guard 策略把关挡得住的只有策略写到的模式；approval 人工审批挡不住人批错与无人应答；sandbox 受限执行挡不住获准访问的资源，旧内核还可能只部分强制。三层都降低风险，都不保证隔离。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="16" width="608" height="74" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="32" width="118" height="42" rx="6" fill="#1B3A6B"/>
+<text x="111" y="46" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">guard</text>
+<text x="111" y="63" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">策略把关</text>
+<rect x="186" y="28" width="226" height="50" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="299" y="43" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">挡得住</text>
+<text x="299" y="62" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">策略写到的模式</text>
+<rect x="422" y="28" width="214" height="50" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="529" y="43" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">挡不住</text>
+<text x="529" y="62" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">策略没写到的模式</text>
+<rect x="40" y="104" width="608" height="74" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="120" width="118" height="42" rx="6" fill="#1B3A6B"/>
+<text x="111" y="134" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">approval</text>
+<text x="111" y="151" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">人工审批</text>
+<rect x="186" y="116" width="226" height="50" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="299" y="131" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">挡得住</text>
+<text x="299" y="150" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">没被授权的操作</text>
+<rect x="422" y="116" width="214" height="50" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="529" y="131" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">挡不住</text>
+<text x="529" y="150" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">人批错；无人应答按拒绝</text>
+<rect x="40" y="192" width="608" height="74" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="208" width="118" height="42" rx="6" fill="#1B3A6B"/>
+<text x="111" y="222" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">sandbox</text>
+<text x="111" y="239" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">受限执行</text>
+<rect x="186" y="204" width="226" height="50" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="299" y="219" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">挡得住</text>
+<text x="299" y="238" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">越出文件边界的写</text>
+<rect x="422" y="204" width="214" height="50" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="529" y="219" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">挡不住</text>
+<text x="529" y="238" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">获准访问的资源；旧内核只部分强制</text>
+<rect x="40" y="288" width="608" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="300.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">三道闸降低风险，不保证隔离。</text>
+<text x="58" y="320.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">官方安全说明：项目尚未接受安全审计。</text>
+<text x="40" y="348" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">三层依次是 guard → approval → sandbox · 据官方沙箱、审批与安全说明概括</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 680 262" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>中心是空的</title>
+<desc>左边把领班放在公司顶端，其余帮手依附于他；右边所有岗位并列，同一张排班表决定谁被请进来。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="26" font-size="12.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">多数系统</text>
+<text x="350" y="26" font-size="12.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">这套系统</text>
+<rect x="40" y="42" width="290" height="132" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="350" y="42" width="290" height="132" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="125" y="58" width="120" height="38" rx="8" fill="#1B3A6B"/>
+<text x="185" y="77" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">领班</text>
+<path d="M185,96 L185,116" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<path d="M97,116 L273,116" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<path d="M97,116 L97,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="61" y="130" width="72" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="97" y="145" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">递工具的</text>
+<path d="M185,116 L185,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="149" y="130" width="72" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="185" y="145" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">记笔记的</text>
+<path d="M273,116 L273,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="237" y="130" width="72" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="273" y="145" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">把门的</text>
+<rect x="395" y="58" width="200" height="38" rx="8" fill="#F5F0E8" stroke="#A9C4E4" stroke-width="1.0"/>
+<text x="495" y="77" font-size="13" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">排班表</text>
+<path d="M495,96 L495,116" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<path d="M390,116 L600,116" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<path d="M390,116 L390,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="360" y="130" width="60" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="390" y="145" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">领班</text>
+<path d="M460,116 L460,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="430" y="130" width="60" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="460" y="145" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">递工具</text>
+<path d="M530,116 L530,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="500" y="130" width="60" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="530" y="145" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">记笔记</text>
+<path d="M600,116 L600,130" fill="none" stroke="#A9C4E4" stroke-width="1.4"/>
+<rect x="570" y="130" width="60" height="30" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="600" y="145" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">把门的</text>
+<path d="M340,52 L340,166" fill="none" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4,4"/>
+<rect x="40" y="194" width="600" height="48" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="208.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">左边：领班是公司的一部分，想换，得连公司一起动。</text>
+<text x="58" y="228.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">右边：领班和帮手站在同一层，一张表决定今天谁上。</text>
+</svg>

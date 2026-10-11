@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 296" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 10：启动时配置的叠加顺序</title>
+<desc>四层配置自上而下依次叠加：bundle（官方预打包）、profile 补丁、home 补丁（用户全局）、--patch（本次启动临时）。每下一层整体覆盖上一层，最后 --patch 生效，全程不做合并。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<rect x="92" y="18" width="380" height="40" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<circle cx="64" cy="38" r="13" fill="#F5F0E8" stroke="#D8D6CD"/>
+<text x="64" y="38" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="108" y="38" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">bundle</text>
+<text x="456" y="38" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">官方预打包的零件</text>
+<path d="M282,60 V82" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<rect x="92" y="84" width="380" height="40" rx="6" fill="#D3DFF0" stroke="#D8D6CD" stroke-width="1.0"/>
+<circle cx="64" cy="104" r="13" fill="#F5F0E8" stroke="#D8D6CD"/>
+<text x="64" y="104" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="108" y="104" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">profile 补丁</text>
+<text x="456" y="104" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="end" dominant-baseline="central">某个 profile 自己的修改</text>
+<path d="M282,126 V148" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<rect x="92" y="150" width="380" height="40" rx="6" fill="#A9C4E4" stroke="#D8D6CD" stroke-width="1.0"/>
+<circle cx="64" cy="170" r="13" fill="#F5F0E8" stroke="#D8D6CD"/>
+<text x="64" y="170" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="108" y="170" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">home 补丁</text>
+<text x="456" y="170" font-size="11" font-weight="400" fill="#3A4A63" text-anchor="end" dominant-baseline="central">用户机器上的全局修改</text>
+<path d="M282,192 V214" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<rect x="92" y="216" width="380" height="40" rx="6" fill="#1B3A6B"/>
+<circle cx="64" cy="236" r="13" fill="#F5F0E8" stroke="#D8D6CD"/>
+<text x="64" y="236" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="108" y="236" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">--patch</text>
+<text x="456" y="236" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">本次启动临时塞进去的</text>
+<rect x="492" y="224" width="76" height="24" rx="12" fill="#0F6E56"/>
+<text x="530" y="236" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">最终生效</text>
+<path d="M472,236 H488" fill="none" stroke="#B4B2A9" stroke-width="1.2"/>
+<text x="92" y="282" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">箭头 = 覆盖方向：后者整体替换前者，不做合并 · 简化自 architecture.zh.md §Profile 与组合包</text>
+</svg>

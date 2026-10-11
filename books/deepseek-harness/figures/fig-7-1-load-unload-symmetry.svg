@@ -1,0 +1,48 @@
+<svg viewBox="0 0 680 364" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 20：加载期和卸载期共用一份代码</title>
+<desc>左栏是加载期，写注册动作；右栏是卸载期，写释放动作；中间一条 effect 竖条连接两栏，左右用虚线一一配对。核心反差：注册和撤销不是两份工作，是同一份 effect 的两个时刻。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="160" y="40" font-size="12" font-weight="600" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">装上时 · 登记</text>
+<text x="520" y="40" font-size="12" font-weight="600" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">拆下时 · 撤销</text>
+<rect x="300" y="60" width="80" height="236" rx="8" fill="#1B3A6B"/>
+<text x="340" y="178" font-size="11.5" fill="#FFFFFF" text-anchor="middle" transform="rotate(-90 340 178)">同一份手续</text>
+<rect x="40" y="72" width="240" height="44" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="54" y="87" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">挂一个听差</text>
+<text x="54" y="103" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">留意公告栏的新消息</text>
+<rect x="400" y="72" width="240" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="414" y="87" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">把听差撤下</text>
+<text x="414" y="103" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">撤销动作</text>
+<path d="M280,94 H296" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M384,94 H400" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="40" y="128" width="240" height="44" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="54" y="143" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">登记一件工具</text>
+<text x="54" y="159" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">名字写上排班表</text>
+<rect x="400" y="128" width="240" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="414" y="143" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">把名字从排班表划掉</text>
+<text x="414" y="159" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">撤销动作</text>
+<path d="M280,150 H296" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M384,150 H400" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="40" y="184" width="240" height="44" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="54" y="199" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">装一个下手</text>
+<text x="54" y="215" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">子插件跟着主家走</text>
+<rect x="400" y="184" width="240" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="414" y="199" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">随主家一起拆下</text>
+<text x="414" y="215" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">撤销动作</text>
+<path d="M280,206 H296" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M384,206 H400" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="40" y="240" width="240" height="44" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="54" y="255" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">雇一个临时工</text>
+<text x="54" y="271" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">定时、长连线、盯梢</text>
+<rect x="400" y="240" width="240" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="414" y="255" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">说好的解雇动作执行</text>
+<text x="414" y="271" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">撤销动作</text>
+<path d="M280,262 H296" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M384,262 H400" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="40" y="302" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="317.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">登记和撤销不是两份工作，是同一份手续的两个时刻。</text>
+<text x="40" y="350" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">手续的正文在装上时执行，撤销动作留到拆下时执行 · 据 官方生命周期教程</text>
+</svg>

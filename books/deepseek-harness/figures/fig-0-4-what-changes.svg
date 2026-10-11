@@ -1,0 +1,37 @@
+<svg viewBox="0 0 680 372" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 4：会变的一边和不该跟着动的一边</title>
+<desc>左栏是必然会变的东西：模型换代、工具增减、权限收紧、任务变长、团队换写法。右栏是不该跟着动的：定下的业务规则、留给人看的记录、扩展的方式、追责线索、别人接你的方法。两栏并列摆开，设计的目标不是让左栏不变，而是左栏变的时候右栏不动。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="24" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">设计的目标：左边怎么变，右边都不动</text>
+<rect x="40" y="44" width="290" height="262" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="68" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">一直在变的那一边</text>
+<rect x="58" y="88" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="74" y="105" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">模型换了一代</text>
+<rect x="58" y="130" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="74" y="147" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">工具多了几个</text>
+<rect x="58" y="172" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="74" y="189" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">权限策略收紧</text>
+<rect x="58" y="214" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="74" y="231" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">任务变得更长</text>
+<rect x="58" y="256" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="74" y="273" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">团队换了写法</text>
+<rect x="350" y="44" width="290" height="262" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="368" y="68" font-size="12" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">不该跟着动的那一边</text>
+<rect x="368" y="88" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="384" y="105" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">已经定下的业务规则</text>
+<rect x="368" y="130" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="384" y="147" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">留给人看的记录</text>
+<rect x="368" y="172" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="384" y="189" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">扩展的方式</text>
+<rect x="368" y="214" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="384" y="231" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">出问题时的追责线索</text>
+<rect x="368" y="256" width="254" height="34" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="384" y="273" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">别人接你的方法</text>
+<rect x="40" y="322" width="600" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="334.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">左边一定会变，拦不住。所以设计要做的不是让它不变。</text>
+<text x="58" y="354.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">是让它变的时候，右边不动。</text>
+</svg>

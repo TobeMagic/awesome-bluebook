@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 214" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 13：能力层是 agent 的手</title>
+<desc>agent 循环下挂一排能力包：shell 跑命令、fs 读写文件、mcp 接外部工具、skill 加载技能、subagent 派小弟。装哪个包，agent 就多哪只手。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<rect x="270" y="18" width="140" height="42" rx="8" fill="#1B3A6B"/>
+<text x="340" y="39" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">agent 循环</text>
+<path d="M340,60 V102" fill="none" stroke="#1B3A6B" stroke-width="1.4"/>
+<path d="M100,104 H580" fill="none" stroke="#B4B2A9" stroke-width="1.2"/>
+<path d="M100,106 V118" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="48" y="120" width="104" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="100" y="139" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">shell</text>
+<text x="100" y="157" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">跑命令</text>
+<path d="M220,106 V118" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="168" y="120" width="104" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="220" y="139" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">fs</text>
+<text x="220" y="157" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">读写文件</text>
+<path d="M340,106 V118" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="288" y="120" width="104" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="340" y="139" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">mcp</text>
+<text x="340" y="157" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">接外部工具</text>
+<path d="M460,106 V118" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="408" y="120" width="104" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="460" y="139" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">skill</text>
+<text x="460" y="157" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">加载技能</text>
+<path d="M580,106 V118" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="528" y="120" width="104" height="50" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="580" y="139" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">subagent</text>
+<text x="580" y="157" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">派小弟</text>
+<text x="48" y="194" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">装哪个包，agent 就多哪只手 · 能力层共 19 个分组、74 个包，此处列出 5 个代表性分组</text>
+</svg>

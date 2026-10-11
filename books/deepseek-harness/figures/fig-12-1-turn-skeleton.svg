@@ -1,0 +1,40 @@
+<svg viewBox="0 0 680 382" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 28：一个轮次的持久骨架与实时信号</title>
+<desc>一个轮次内两类事件并排对照。左列写进会话日志，是能回放的持久事实：turn/start、step/start、system/message、user/message、assistant/message、tool/*、step/end、turn/end。右列只在进程里广播，不落盘：agent/status、agent/assistant-stream、agent/inbox/*。核心反差：能回放的都在左列，过路不落盘的一律在右列。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="34" width="360" height="270" rx="10" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="420" y="34" width="240" height="270" rx="10" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="5 4"/>
+<text x="56" y="22" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">落进笔记 · 要留底的（能回放）</text>
+<text x="436" y="22" font-size="11.5" font-weight="600" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">喊一嗓子 · 过路的（不落笔）</text>
+<rect x="56" y="46" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="59" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">接话 · 这趟开工</text>
+<rect x="56" y="78" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="91" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">定主意 · 起一步</text>
+<rect x="56" y="110" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="123" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">开场白落笔</text>
+<rect x="56" y="142" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="155" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">业主的话落笔</text>
+<rect x="56" y="174" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="187" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">师傅的回话落笔</text>
+<rect x="56" y="206" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="219" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">动手 · 拧的每颗螺丝</text>
+<rect x="56" y="238" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="251" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">看结果 · 这一步收工</text>
+<rect x="56" y="270" width="328" height="26" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="70" y="283" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">再定 · 这趟交活</text>
+<rect x="436" y="76" width="208" height="32" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="452" y="92" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">领班忙还是闲</text>
+<rect x="436" y="152" width="208" height="32" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="452" y="168" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">回话逐字往外流</text>
+<rect x="436" y="228" width="208" height="32" rx="5" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="452" y="244" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">有新话进门了</text>
+<path d="M410,44 L410,296" fill="none" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="410" y="170" font-size="10.5" fill="#5F5E5A" text-anchor="middle" transform="rotate(-90 410 170)">落笔分界</text>
+<rect x="40" y="316" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="331.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">能回放的都在左列；过路不落笔的都在右列。</text>
+<text x="40" y="368" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">口径：要留底的落进笔记，日后能原样重念；喊一嗓子的只广播不落笔 · 官方架构文档的轮次流程一节</text>
+</svg>

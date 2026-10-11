@@ -1,0 +1,46 @@
+<svg viewBox="0 0 680 420" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 50：同一件事的两种写法</title>
+<desc>一张五行对照表。左列是 Cordis 的工程实践，右列是论文的形式定义，每行一条双向箭头。ctx.effect() 返回 disposer 对应 revertible effect；inject 声明依赖、就绪才启动对应 reactive coeffect；ctx.&lt;key&gt; 服务容器对应统一的 effect / coeffect context；插件卸载时撤销注册是时间可组合性的运行时兑现；HMR 热模块替换是时空可组合性的可观测后果。左边是能跑的代码，右边是形式定义，不是比喻。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="24" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">Cordis 工程实践</text>
+<text x="352" y="24" font-size="11.5" font-weight="600" fill="#0F6E56" text-anchor="start" dominant-baseline="central">论文的形式定义</text>
+<rect x="40" y="44" width="288" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="67.0" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">ctx.effect() 返回 disposer</text>
+<rect x="352" y="44" width="288" height="46" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="370" y="67.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">revertible effect（时间可组合性）</text>
+<path d="M332,67.0 L348,67.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<path d="M348,67.0 L332,67.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="96" width="288" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="119.0" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">inject 声明依赖，就绪才启动</text>
+<rect x="352" y="96" width="288" height="46" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="370" y="119.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">reactive coeffect（空间可组合性）</text>
+<path d="M332,119.0 L348,119.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<path d="M348,119.0 L332,119.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="148" width="288" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="171.0" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">ctx.&lt;key&gt; 服务容器</text>
+<rect x="352" y="148" width="288" height="46" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="370" y="171.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">统一的 effect / coeffect context</text>
+<path d="M332,171.0 L348,171.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<path d="M348,171.0 L332,171.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="200" width="288" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="223.0" font-size="11.5" font-weight="400" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">插件卸载时撤销注册</text>
+<rect x="352" y="200" width="288" height="46" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="370" y="223.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">时间可组合性的运行时兑现</text>
+<path d="M332,223.0 L348,223.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<path d="M348,223.0 L332,223.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="252" width="288" height="46" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="275.0" font-size="11.5" font-weight="400" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">HMR 热模块替换</text>
+<rect x="352" y="252" width="288" height="46" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="370" y="275.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">时空可组合性的可观测后果</text>
+<path d="M332,275.0 L348,275.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<path d="M348,275.0 L332,275.0" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="40" y="312" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="327.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">左边是能跑的代码，右边是形式定义，说的是同一件事，不是比喻。</text>
+<text x="40" y="366" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">论文 arXiv:2608.25512 · 92 页 · 2026-08-26 · cs.PL / cs.SE</text>
+<text x="40" y="386" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">标题《A Programming Paradigm for Spatiotemporal Composability》</text>
+<text x="40" y="406" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">本书未精读论文正文：映射为本书据二手整理所做，非论文原表呈现。</text>
+</svg>

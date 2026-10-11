@@ -1,0 +1,34 @@
+<svg viewBox="0 0 680 322" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 43：四起事故的信号都指向错的状态</title>
+<desc>四起事故的信号分别是 100% 行覆盖率、快照通过、HTTP 200 和非零退出码。它们的真实状态分别是装配路径从未被测、回放确定性不等于行为正确、页面白屏、子程序正常完成。看起来对的信号，指向错的状态。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="56" y="24" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">看起来对的信号</text>
+<text x="368" y="24" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">真实状态</text>
+<rect x="40" y="42" width="290" height="42" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="63" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">100% 行覆盖率</text>
+<path d="M334,63 H364" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="368" y="42" width="280" height="42" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="386" y="63" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">装配路径从未被测</text>
+<rect x="40" y="96" width="290" height="42" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="117" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">快照通过</text>
+<path d="M334,117 H364" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="368" y="96" width="280" height="42" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="386" y="117" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">回放确定性 ≠ 行为正确</text>
+<rect x="40" y="150" width="290" height="42" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="171" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">HTTP 200</text>
+<path d="M334,171 H364" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="368" y="150" width="280" height="42" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="386" y="171" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">页面白屏</text>
+<rect x="40" y="204" width="290" height="42" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="225" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">非零退出码</text>
+<path d="M334,225 H364" fill="none" stroke="#5F5E5A" stroke-width="1.2" marker-end="url(#ar)"/>
+<rect x="368" y="204" width="280" height="42" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="386" y="225" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">子程序正常完成</text>
+<rect x="40" y="268" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="283.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">四个看起来对的信号，指向四个错的状态。</text>
+<text x="40" y="310" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">四起事故的信号与真实状态对照 · 整理自 官方复盘 0001–0004</text>
+</svg>

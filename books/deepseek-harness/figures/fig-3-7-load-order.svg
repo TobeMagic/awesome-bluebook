@@ -1,0 +1,24 @@
+<svg viewBox="0 0 680 206" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 14：加载顺序由依赖声明推导</title>
+<desc>tools 的 package.json 里声明依赖 session。Cordis 读到这张清单，发现 session 还没就绪就先装 session，就绪后再装 tools。加载顺序由依赖声明推导，不是手工排班表。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<rect x="40" y="24" width="250" height="104" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="46" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">tools 的 package.json</text>
+<text x="56" y="70" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">"dependencies": {</text>
+<text x="56" y="88" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">"@deepseek-ai/dsh-session"</text>
+<text x="56" y="106" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">: "workspace:*" }</text>
+<path d="M290,76 C322,76 330,50 362,50" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<text x="324" y="88" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">Cordis 读清单</text>
+<rect x="364" y="24" width="276" height="52" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="380" y="44" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">session 还没就绪</text>
+<text x="380" y="62" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">先把 session 装好</text>
+<path d="M502,76 V94" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<rect x="364" y="96" width="276" height="52" rx="6" fill="#1B3A6B"/>
+<text x="380" y="116" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">session 就绪了</text>
+<text x="380" y="134" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="start" dominant-baseline="central">再装 tools</text>
+<text x="40" y="168" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">包与包的关系写在配置里，不写在代码里：加一个包知道该等谁，删一个包知道牵连谁</text>
+<text x="40" y="188" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">机制为 Cordis 依赖解析，§05 细讲 · 例取自 packages/core/tools/package.json</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 680 266" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 5：谁在依赖 agent-loop</title>
+<desc>316 个包里，运行时依赖 agent-loop 的只有 base 和 sdk-minimal 两个装配包，外加测试工具包 agent-loop-testkit。46 个包只在测试里引用它。267 个包一次都没提过它。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<rect x="140" y="28" width="150" height="46" rx="6" fill="#D3DFF0" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="215" y="51" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">base</text>
+<rect x="390" y="28" width="150" height="46" rx="6" fill="#D3DFF0" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="465" y="51" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">sdk-minimal</text>
+<path d="M215,74 C215,110 300,110 322,138" fill="none" stroke="#1B3A6B" stroke-width="1.6" marker-end="url(#arb)"/>
+<path d="M465,74 C465,110 380,110 358,138" fill="none" stroke="#1B3A6B" stroke-width="1.6" marker-end="url(#arb)"/>
+<text x="340" y="104" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">运行时依赖</text>
+<rect x="250" y="140" width="180" height="54" rx="8" fill="#1B3A6B"/>
+<text x="340" y="160" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">agent-loop</text>
+<text x="340" y="180" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central">唯一的具体循环插件</text>
+<rect x="40" y="140" width="170" height="54" rx="8" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="125" y="160" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">46 个包</text>
+<text x="125" y="180" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">只在测试里引用</text>
+<path d="M212,167 H244" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="3 3" marker-end="url(#ar)"/>
+<rect x="470" y="140" width="170" height="54" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="555" y="160" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">267 个包</text>
+<text x="555" y="180" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">一次都没提过它</text>
+<text x="40" y="228" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">316 个包 = 3 个运行时依赖 + 46 个仅测试引用 + 267 个未提及；运行时那 3 个含测试工具包 agent-loop-testkit</text>
+<text x="40" y="248" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">口径：316 个 package.json 的三类依赖字段</text>
+</svg>

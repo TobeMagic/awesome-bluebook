@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 320" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 37：四种角色看实现列</title>
+<desc>四种角色并排：core 核心主干服务、seam 可替换的能力 seam、service 独立服务、bundle 组合包。core、service、bundle 三格的实现列都是空的，只能靠官方角色列区分；seam 那格有平级实现包。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="22" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">角色</text>
+<text x="180" y="22" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">官方名</text>
+<text x="392" y="22" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">实现列</text>
+<rect x="40" y="40" width="608" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="48" width="92" height="26" rx="13" fill="#1B3A6B"/>
+<text x="98" y="61" font-size="11.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">core</text>
+<text x="180" y="61" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">核心主干服务</text>
+<text x="392" y="61" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">空</text>
+<rect x="40" y="94" width="608" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="102" width="92" height="26" rx="13" fill="#0F6E56"/>
+<text x="98" y="115" font-size="11.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">seam</text>
+<text x="180" y="115" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">可替换的能力 seam</text>
+<text x="392" y="115" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">有平级实现包</text>
+<rect x="40" y="148" width="608" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="156" width="92" height="26" rx="13" fill="#A9C4E4"/>
+<text x="98" y="169" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">service</text>
+<text x="180" y="169" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">独立服务</text>
+<text x="392" y="169" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">空</text>
+<rect x="40" y="202" width="608" height="42" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="210" width="92" height="26" rx="13" fill="#EDF2F9"/>
+<text x="98" y="223" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">bundle</text>
+<text x="180" y="223" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">组合包／组合点</text>
+<text x="392" y="223" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">空</text>
+<rect x="40" y="264" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="279.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">实现列有平级实现包的一定是 seam；空的三类靠官方角色列区分。</text>
+<text x="40" y="306" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">92 个 ctx 键：core 55 / seam 33 / service 3 / bundle 1 · 实现列与角色列取自官方能力表</text>
+</svg>

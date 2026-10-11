@@ -1,0 +1,82 @@
+<svg viewBox="0 0 680 268" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 39：33 个 seam 里只有 15 个备好了第二个实现</title>
+<desc>一条横轴摆 33 格，每格一个 seam。绿色的 15 格已有两个以上平级实现；灰色的 18 格契约立好了，眼下只有一份实现。有替换位和有没有现成的第二个实现，是两笔账。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="196.0" y="30" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">有替换位</text>
+<text x="504.0" y="30" font-size="13" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">已备好第二个实现</text>
+<rect x="60" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="85" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="110" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="135" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="160" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="185" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="210" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="235" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="260" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="285" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="310" y="48" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="60" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="85" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="110" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="135" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="160" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="185" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="210" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="235" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="260" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="285" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="310" y="78" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="60" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="85" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="110" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="135" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="160" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="185" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="210" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="235" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="260" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="285" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="310" y="108" width="22" height="22" rx="3" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="368" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="393" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="418" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="443" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="468" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="493" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="518" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="543" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="568" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="593" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="618" y="48" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="368" y="78" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="393" y="78" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="418" y="78" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="443" y="78" width="22" height="22" rx="3" fill="#0F6E56"/>
+<rect x="468" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="493" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="518" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="543" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="568" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="593" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="618" y="78" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="368" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="393" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="418" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="443" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="468" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="493" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="518" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="543" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="568" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="593" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<rect x="618" y="108" width="22" height="22" rx="3" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="3 3"/>
+<path d="M644,100 L644,130" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="654" y="115.0" font-size="11" fill="#5F5E5A" text-anchor="middle" transform="rotate(-90 654 115.0)">还空着</text>
+<rect x="40" y="170" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="185.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">有替换位，不等于备好了第二个实现。</text>
+<text x="40" y="218" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">一格里一个位子 · 实心 = 第二个实现已到岗 · 虚线空格 = 契约立好了，实现还只有一份</text>
+</svg>

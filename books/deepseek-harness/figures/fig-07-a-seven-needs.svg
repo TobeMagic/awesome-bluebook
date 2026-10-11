@@ -1,0 +1,41 @@
+<svg viewBox="0 0 680 448" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>一句话进来，七件事出去</title>
+<desc>师傅只会想，七件事都得队伍里另外有人干。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="16" width="280" height="36" rx="18" fill="#EDF2F9" stroke="#A9C4E4" stroke-width="1.0"/>
+<text x="60" y="34" font-size="12.5" font-weight="400" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">家里厨房的灯不亮了</text>
+<rect x="40" y="76" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="92" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">找到坏的那段线</text>
+<path d="M254,92 L274,92" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="92" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人动手查</text>
+<rect x="40" y="120" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="136" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">把它换掉</text>
+<path d="M254,136 L274,136" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="136" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人动手改</text>
+<rect x="40" y="164" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="180" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">通一下电看亮不亮</text>
+<path d="M254,180 L274,180" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="180" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人验结果</text>
+<rect x="40" y="208" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="224" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">记住刚试过什么</text>
+<path d="M254,224 L274,224" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="224" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人记笔记</text>
+<rect x="40" y="252" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="268" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">想拆开电表</text>
+<path d="M254,268 L274,268" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="268" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人拦住</text>
+<rect x="40" y="296" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="312" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">收工明天再来</text>
+<path d="M254,312 L274,312" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="312" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">得有人接着上次的</text>
+<rect x="40" y="340" width="210" height="32" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="356" font-size="12.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">换个更便宜的师傅</text>
+<path d="M254,356 L274,356" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="282" y="356" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">师傅得能换</text>
+<rect x="40" y="392" width="600" height="32" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="408.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">师傅只会想。这七件事，都得队伍里另外有人补上。</text>
+</svg>

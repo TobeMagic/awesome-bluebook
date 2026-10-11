@@ -1,0 +1,42 @@
+<svg viewBox="0 0 680 358" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 46：五道检验各查一个侧面</title>
+<desc>五道检验排成一列：能力按 key 分发、依赖声明式、副作用可撤销、真源唯一、信号绑上下文。每道右边标着它回扣的节号，第五道用青色标出。五道各查一段，没有两道查同一件事；末一道管的是前四道可不可信。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="12" width="608" height="30" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="27.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">总判据：删掉一个插件，系统回到装它之前的样子。</text>
+<rect x="40" y="62" width="608" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="71" width="26" height="26" rx="13" fill="#1B3A6B"/>
+<text x="65" y="84" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1</text>
+<text x="92" y="84" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">能力按 key 分发</text>
+<text x="300" y="84" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">消费方写的是 key，还是实现</text>
+<rect x="576" y="73" width="64" height="22" rx="11" fill="#EDF2F9"/><text x="608.0" y="84.0" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">§04</text>
+<rect x="40" y="114" width="608" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="123" width="26" height="26" rx="13" fill="#1B3A6B"/>
+<text x="65" y="136" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">2</text>
+<text x="92" y="136" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">依赖声明式</text>
+<text x="300" y="136" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">删掉手写调用，顺序还对不对</text>
+<rect x="576" y="125" width="64" height="22" rx="11" fill="#EDF2F9"/><text x="608.0" y="136.0" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">§05</text>
+<rect x="40" y="166" width="608" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="175" width="26" height="26" rx="13" fill="#1B3A6B"/>
+<text x="65" y="188" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">3</text>
+<text x="92" y="188" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">副作用可撤销</text>
+<text x="300" y="188" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">每个注册能不能追到 disposer</text>
+<rect x="576" y="177" width="64" height="22" rx="11" fill="#EDF2F9"/><text x="608.0" y="188.0" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">§07</text>
+<rect x="40" y="218" width="608" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="227" width="26" height="26" rx="13" fill="#1B3A6B"/>
+<text x="65" y="240" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">4</text>
+<text x="92" y="240" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">真源唯一</text>
+<text x="300" y="240" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">删掉派生数据能不能重建</text>
+<rect x="576" y="229" width="64" height="22" rx="11" fill="#EDF2F9"/><text x="608.0" y="240.0" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">§14</text>
+<rect x="40" y="270" width="608" height="44" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="52" y="279" width="26" height="26" rx="13" fill="#0F6E56"/>
+<text x="65" y="292" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">5</text>
+<text x="92" y="292" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">信号绑上下文</text>
+<text x="300" y="292" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">信号的产生路径是不是生产路径</text>
+<rect x="576" y="281" width="64" height="22" rx="11" fill="#A9C4E4"/><text x="608.0" y="292.0" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">§17</text>
+<text x="40" y="344" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">五道检验为本书原创，抽自 §04 / §05 / §07 / §14 / §17 的结论 · 末一道管前四道可不可信</text>
+</svg>

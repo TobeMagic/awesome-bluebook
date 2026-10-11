@@ -1,0 +1,16 @@
+# 内部调研材料（源码分析、调研笔记，不公开）
+research/
+
+# 工作区数据与缓存
+.workbuddy/
+.tmp/
+__pycache__/
+*.pyc
+generated-images/
+
+# 历史草稿归档
+books/*/fragments-v1/
+books/*/fragments-v2/
+
+# 片段预览 HTML（成书以外的工作文件）
+books/*/fragments/*.html

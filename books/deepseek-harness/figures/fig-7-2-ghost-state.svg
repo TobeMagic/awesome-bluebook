@@ -1,0 +1,34 @@
+<svg viewBox="0 0 680 396" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 21：漏掉 disposer，旧注册会在新实例旁边继续应答</title>
+<desc>两个对比面板。上面是正确撤销：旧注册框只剩一个虚线空位，标着已释放，事件只送达到唯一的新实例。下面是漏写：旧注册虚线框留在原处，与新实例如并排，事件箭头同时打到两个框，同一事件被处理两次。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="56" y="42" font-size="12" font-weight="600" fill="#0F6E56" text-anchor="start" dominant-baseline="central">① 拆干净：旧登记已撤销</text>
+<rect x="40" y="78" width="100" height="44" rx="8" fill="#D3DFF0"/>
+<text x="90" y="100" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">公告</text>
+<path d="M144,100 H430" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="287" y="84" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">消息送达</text>
+<rect x="434" y="78" width="206" height="44" rx="8" fill="#EDF2F9" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="537" y="100" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">新班子 · 唯一在岗</text>
+<rect x="190" y="136" width="220" height="40" rx="6" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="300" y="156" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">旧登记 · 已撤销</text>
+<path d="M196,144 L404,168" fill="none" stroke="#B4B2A9" stroke-width="1.2"/>
+<path d="M40,196 L648,196" fill="none" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="218" font-size="12" font-weight="600" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">② 拆一半留一半：旧登记还挂着</text>
+<rect x="40" y="250" width="100" height="48" rx="8" fill="#D3DFF0"/>
+<text x="90" y="274" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">公告</text>
+<rect x="196" y="246" width="200" height="48" rx="8" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="296" y="266" font-size="11.5" font-weight="600" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">旧登记（幽灵）</text>
+<text x="296" y="284" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">还挂在公告栏上</text>
+<rect x="420" y="246" width="220" height="48" rx="8" fill="#EDF2F9" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="530" y="270" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">新班子</text>
+<path d="M144,274 C168,274 176,268 192,268" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M144,274 C240,274 330,268 416,268" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="340" y="316" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">同一条消息被办了两回</text>
+<rect x="40" y="334" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="349.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">拆一半留一半，就是幽灵状态：少一步撤销，系统里就多一个还会应答的旧人手。</text>
+<text x="40" y="382" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">热替换先拆下再装上；漏撤的旧听差留在公告栏上 · 官方组合与热替换教程</text>
+</svg>

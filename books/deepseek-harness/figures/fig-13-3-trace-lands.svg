@@ -1,0 +1,43 @@
+<svg viewBox="0 0 680 310" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 33：中止和失败都汇到同一条 tool/result</title>
+<desc>左侧三条入口：拒绝 denied、异常 throw、取消 cancelled，各画一条线。三条线汇进右侧同一个工具结果框 tool/result，框内逐条标出各自的错误码：拒绝带 reason、异常归一化成 isError、取消分 ABORTED 与 ABORTED_BEFORE_DISPATCH、不存在的工具是 UNKNOWN_TOOL。核心反差：三条看着不同的路，出口只有一个，共同点是调用失败但不终止当前轮次。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="40" width="150" height="40" rx="8" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="55" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">拦下的</text>
+<text x="58" y="71" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">把门的不点头</text>
+<rect x="40" y="100" width="150" height="40" rx="8" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="115" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">拧砸了的</text>
+<text x="58" y="131" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">活干到一半出错</text>
+<rect x="40" y="160" width="150" height="40" rx="8" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="175" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">半道收回的</text>
+<text x="58" y="191" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">下活的反悔</text>
+<rect x="360" y="40" width="290" height="170" rx="10" fill="#1B3A6B"/>
+<text x="380" y="64" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">同一张回话</text>
+<text x="380" y="84" font-size="10.5" font-weight="400" fill="#C9DBF1" text-anchor="start" dominant-baseline="central">所有叫停与失败都归一成这一条</text>
+<circle cx="386" cy="108" r="3.5" fill="#5DCAA5"/>
+<text x="398" y="108" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">拦下</text>
+<text x="640" y="108" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">附理由</text>
+<circle cx="386" cy="130" r="3.5" fill="#5DCAA5"/>
+<text x="398" y="130" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">拧砸</text>
+<text x="640" y="130" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">没拧成</text>
+<circle cx="386" cy="152" r="3.5" fill="#FFFFFF"/>
+<text x="398" y="152" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">收回 · 已动手</text>
+<text x="640" y="152" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">算拧过</text>
+<circle cx="386" cy="174" r="3.5" fill="#FFFFFF"/>
+<text x="398" y="174" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">收回 · 未动手</text>
+<text x="640" y="174" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">没派活</text>
+<circle cx="386" cy="196" r="3.5" fill="#FFFFFF"/>
+<text x="398" y="196" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="start" dominant-baseline="central">没这号活</text>
+<text x="640" y="196" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="end" dominant-baseline="central">报不上名</text>
+<path d="M192,60 C280,60 300,108 354,108" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M192,120 C280,120 300,130 354,130" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M192,180 C280,180 300,152 354,152" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="40" y="228" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="243.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">拦下的、拧砸的、半道收回的，三条路出口都是同一张回话；这颗拧砸了，这趟活不跟着黄。</text>
+<text x="40" y="278" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">回话上标的区别：拦下附理由；拧砸标「没拧成」；报不上名的就是没这号活</text>
+<text x="40" y="296" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">收回分两种：已经动了手的算拧过，还没派活的算没动手</text>
+</svg>

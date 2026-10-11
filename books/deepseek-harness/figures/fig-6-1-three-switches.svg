@@ -1,0 +1,54 @@
+<svg viewBox="0 0 680 336" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 19：五种模式只差三个开关</title>
+<desc>左边三个纵向开关：等待、顺序、返回值。右边五行模式列出各自的开关组合：emit 三点全空、serial 三点全实心。核心反差：名字有五个，开关只有三组。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="36" width="240" height="196" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="58" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">三个开关</text>
+<text x="56" y="100" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">等待</text>
+<rect x="120" y="89" width="66" height="22" rx="11" fill="#D8D6CD"/>
+<circle cx="134" cy="100" r="9" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="200" y="100" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">等 / 不等</text>
+<text x="56" y="152" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">顺序</text>
+<rect x="120" y="141" width="66" height="22" rx="11" fill="#D8D6CD"/>
+<circle cx="134" cy="152" r="9" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="200" y="152" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">按序 / 并发</text>
+<text x="56" y="204" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">返回值</text>
+<rect x="120" y="193" width="66" height="22" rx="11" fill="#D8D6CD"/>
+<circle cx="134" cy="204" r="9" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="200" y="204" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">收 / 不收</text>
+<rect x="300" y="36" width="348" height="224" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="312" y="62" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">模式</text>
+<text x="468" y="62" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">等待</text>
+<text x="528" y="62" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">顺序</text>
+<text x="588" y="62" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">返回值</text>
+<path d="M312,78 L636,78" fill="none" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="312" y="104" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">emit</text>
+<circle cx="468" cy="104" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="528" cy="104" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="588" cy="104" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<text x="636" y="104" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="end" dominant-baseline="central">全关</text>
+<text x="312" y="134" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">waterfall</text>
+<circle cx="468" cy="134" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="528" cy="134" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="588" cy="134" r="6" fill="#0F6E56"/>
+<text x="312" y="164" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">parallel</text>
+<circle cx="468" cy="164" r="6" fill="#0F6E56"/>
+<circle cx="528" cy="164" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="588" cy="164" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<text x="312" y="194" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">serial</text>
+<circle cx="468" cy="194" r="6" fill="#0F6E56"/>
+<circle cx="528" cy="194" r="6" fill="#0F6E56"/>
+<circle cx="588" cy="194" r="6" fill="#0F6E56"/>
+<text x="636" y="194" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="end" dominant-baseline="central">全开</text>
+<text x="312" y="224" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">bail</text>
+<circle cx="468" cy="224" r="6" fill="none" stroke="#B4B2A9" stroke-width="1.4"/>
+<circle cx="528" cy="224" r="6" fill="#0F6E56"/>
+<circle cx="588" cy="224" r="6" fill="#0F6E56"/>
+<rect x="40" y="274" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="289.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">名字有五个，开关只有三组：emit 全关，serial 全开。</text>
+<text x="40" y="322" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">对照官方五模式表；emit 59 个、waterfall 17、parallel 3、serial 2、bail 0</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 680 376" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 2：harness 站在模型和真实世界之间</title>
+<desc>上框是模型，只会输出文本。中间是 harness，把文本变成动作、拦住不该做的、记住做过的。下框是真实世界：文件、命令、网络、人。向下的箭头是动作，左侧绕回来的青色箭头是结果。模型碰不到真实世界，中间这一层是唯一的通道，也是唯一能设卡的地方。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="24" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">一句话要变成真实世界里的一个动作，中间必须有人接</text>
+<rect x="190" y="44" width="300" height="54" rx="6" fill="#EDF2F9"/>
+<text x="340" y="71" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">模型：只会输出文本</text>
+<path d="M340,98 V126" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="352" y="112" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">它说的话</text>
+<rect x="120" y="130" width="440" height="92" rx="6" fill="#F5F0E8" stroke="#1B3A6B" stroke-width="1.2"/>
+<text x="140" y="154" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">Harness：把话变成动作，也把结果变回话</text>
+<rect x="140" y="170" width="126" height="32" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="203" y="186.0" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">变成动作</text>
+<rect x="278" y="170" width="126" height="32" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="341" y="186.0" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">拦住不该做的</text>
+<rect x="416" y="170" width="126" height="32" rx="6" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="479" y="186.0" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">记住做过的</text>
+<path d="M340,222 V250" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="352" y="236" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">真的去动它</text>
+<rect x="190" y="254" width="300" height="54" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="340" y="281" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">真实世界：文件、命令、网络、人</text>
+<path d="M170,281 H96 V71 H188" fill="none" stroke="#0F6E56" stroke-width="1.4" marker-end="url(#art)"/>
+<text x="88" y="176" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">结</text>
+<text x="88" y="192" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">果</text>
+<rect x="40" y="328" width="600" height="44" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="340.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">模型碰不到真实世界。它只能说话，做事的是 harness。</text>
+<text x="58" y="360.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">所有风险也是从这儿来的：一道口令和一次删除之间，只隔着这一层。</text>
+</svg>

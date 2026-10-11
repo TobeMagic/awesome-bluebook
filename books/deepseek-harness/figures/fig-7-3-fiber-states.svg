@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 314" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 22：fiber 走完卸载才到 DISPOSED</title>
+<desc>一条状态链 PENDING → LOADING → ACTIVE → UNLOADING → DISPOSED，ACTIVE 下方接一条 FAILED 支线。上方还有一条从 ACTIVE 直通 DISPOSED 的虚线，打叉表示不能直达。核心反差：DISPOSED 只能经由 UNLOADING 到达，卸载是有终点的过程。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="34" y="90" width="100" height="44" rx="8" fill="#EDF2F9"/>
+<text x="84.0" y="112.0" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PENDING</text>
+<rect x="162" y="90" width="100" height="44" rx="8" fill="#D3DFF0"/>
+<text x="212.0" y="112.0" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">LOADING</text>
+<rect x="290" y="90" width="100" height="44" rx="8" fill="#1B3A6B"/>
+<text x="340.0" y="112.0" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">ACTIVE</text>
+<rect x="418" y="90" width="100" height="44" rx="8" fill="#D3DFF0" stroke="#0F6E56" stroke-width="1.6"/>
+<text x="468.0" y="112.0" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">UNLOADING</text>
+<rect x="546" y="90" width="100" height="44" rx="8" fill="#A9C4E4"/>
+<text x="596.0" y="112.0" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">DISPOSED</text>
+<path d="M134,112 H158" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M262,112 H286" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M390,112 H414" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M518,112 H542" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<path d="M340,134 V186" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="352" y="160" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">出错</text>
+<rect x="290" y="190" width="100" height="44" rx="6" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="340" y="212" font-size="11.5" font-weight="600" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">FAILED</text>
+<text x="468" y="158" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">等所有 disposer 结算</text>
+<path d="M390,96 C440,48 540,50 590,90" fill="none" stroke="#B4B2A9" stroke-width="1.2" stroke-dasharray="5 4"/>
+<path d="M484,52 L496,64" fill="none" stroke="#5F5E5A" stroke-width="1.3"/>
+<path d="M496,52 L484,64" fill="none" stroke="#5F5E5A" stroke-width="1.3"/>
+<text x="490" y="34" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">不能直达</text>
+<rect x="40" y="252" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="267.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">DISPOSED 只能经由 UNLOADING 到达 —— 卸载是有终点的过程，不是瞬时动作。</text>
+<text x="40" y="300" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">fiber 状态机 PENDING → … → DISPOSED，另一路 FAILED · 据 官方生命周期教程</text>
+</svg>

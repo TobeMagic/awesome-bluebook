@@ -1,0 +1,147 @@
+<svg viewBox="0 0 680 1072" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 29：从 followup 到工具结果，一次轮次的完整时序</title>
+<desc>竖向时序图，七条生命线自左向右：用户/SDK、Session、Driver、hooks、ctx.systemPrompt、ctx.llm、ctx.tools，时间自上而下。followup 进来后 Driver 开轮次（turn/start），组装提示词、跑 agent/pre-step；被拒或首批为空则空轮次结束，接纳则开步骤（step/start），协调请求、llm/stream 流式返回，模型成功后进工具循环（tool/call → 有序 pre、并发 execute → tool/result），最后 step/end、turn/end、agent/status idle。左侧括号标出 alt / else / loop / opt 分支。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="67.0" y="22" width="56" height="42" rx="8" fill="#EDF2F9" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="95" y="43.0" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">业主</text>
+<rect x="147.0" y="22" width="72" height="42" rx="8" fill="#1B3A6B"/>
+<text x="183" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">记笔记的</text>
+<rect x="239.0" y="22" width="64" height="42" rx="8" fill="#1B3A6B"/>
+<text x="271" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">领班的</text>
+<rect x="327.0" y="22" width="64" height="42" rx="8" fill="#1B3A6B"/>
+<text x="359" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">公告栏</text>
+<rect x="404.0" y="22" width="86" height="42" rx="8" fill="#1B3A6B"/>
+<text x="447" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">拼开场白的</text>
+<rect x="511.0" y="22" width="48" height="42" rx="8" fill="#1B3A6B"/>
+<text x="535" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">师傅</text>
+<rect x="591.0" y="22" width="64" height="42" rx="8" fill="#1B3A6B"/>
+<text x="623" y="43.0" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">拧螺丝的</text>
+<path d="M95,64 L95,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M183,64 L183,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M271,64 L271,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M359,64 L359,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M447,64 L447,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M535,64 L535,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M623,64 L623,980" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<path d="M95,94 L271,94" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="141.25" y="77" width="83.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="183.0" y="85" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">业主一句话进门</text>
+<path d="M271,121 L95,121" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="125.5" y="104" width="115.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="183.0" y="112" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">回执：话已并进这一趟</text>
+<path d="M271,146 h26 v14 h-16" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="301" y="147" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="305" y="155" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">排队的活唤醒领班</text>
+<path d="M271,173 L95,173" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="136.0" y="156" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="183.0" y="164" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">喊一嗓子：开工了</text>
+<path d="M271,200 L183,200" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="185.25" y="183" width="83.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="191" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：这趟开工</text>
+<path d="M271,227 L447,227" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="301.5" y="210" width="115.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="359.0" y="218" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">拼开场白（一道道过）</text>
+<path d="M271,254 L359,254" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="257.5" y="237" width="115.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="245" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">起这一步前先过一道手</text>
+<path d="M359,281 L271,281" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="217.3375" y="264" width="195.325" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="272" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">回话：拦下 / 放行（要不要另起新账）</text>
+<path d="M271,327 L183,327" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="159.0" y="310" width="136.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="318" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：这趟空收，不记步骤</text>
+<path d="M271,373 L183,373" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="190.5" y="356" width="73.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="364" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：起一步</text>
+<path d="M271,400 L359,400" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="262.75" y="383" width="104.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="391" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">问师傅前先过一道手</text>
+<path d="M271,427 L535,427" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="350.75" y="410" width="104.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="403.0" y="418" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">把问题递到师傅手里</text>
+<path d="M271,454 L183,454" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="164.25" y="437" width="125.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="445" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：开场白与业主的话</text>
+<path d="M271,481 L183,481" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="153.75" y="464" width="146.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="472" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：这次问的底细（按需）</text>
+<path d="M271,508 L535,508" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="340.25" y="491" width="125.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="403.0" y="499" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">请师傅作答（边答边传）</text>
+<path d="M535,535 L271,535" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="366.5" y="518" width="73.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="403.0" y="526" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">师傅逐字回话</text>
+<path d="M271,562 L95,562" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="120.25" y="545" width="125.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="183.0" y="553" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">喊一嗓子：回话在往外流</text>
+<path d="M271,608 L183,608" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="164.25" y="591" width="125.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="599" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：师傅这一答的草稿</text>
+<path d="M271,635 L359,635" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="268.0" y="618" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="626" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">没答成，过一道手</text>
+<path d="M359,662 L271,662" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="235.975" y="645" width="158.05" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="653" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">回话：原话重问 或 认下这次错</text>
+<path d="M271,708 L183,708" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="180.0" y="691" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="699" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：师傅的回话</text>
+<path d="M271,735 L623,735" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="394.75" y="718" width="104.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="447.0" y="726" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">排活：哪些能同时干</text>
+<path d="M271,781 L183,781" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="174.75" y="764" width="104.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="772" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：要拧这颗螺丝</text>
+<path d="M271,808 L623,808" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="368.5" y="791" width="157.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="447.0" y="799" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">先过五道手，能同时的同时动手</text>
+<path d="M623,835 L183,835" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="340.25" y="818" width="125.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="403.0" y="826" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：拧的结果（直达）</text>
+<path d="M271,862 L183,862" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="180.0" y="845" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="853" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：这一步收工</text>
+<path d="M271,908 L359,908" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="257.5" y="891" width="115.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="315.0" y="899" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">这趟收尾前再过一道手</text>
+<path d="M271,935 L183,935" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="185.25" y="918" width="83.5" height="15" rx="6" fill="#FFFFFF"/>
+<text x="227.0" y="926" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">笔记：这趟交活</text>
+<path d="M271,962 L95,962" fill="none" stroke="#1B3A6B" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#arb)"/>
+<rect x="136.0" y="945" width="94.0" height="15" rx="6" fill="#FFFFFF"/>
+<text x="183.0" y="953" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">喊一嗓子：收工了</text>
+<path d="M46,305 L46,925" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M46,305 L55,305" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M46,925 L55,925" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="56" y="294" width="174.025" height="16" rx="8" fill="#EDF2F9"/>
+<text x="143.0125" y="302" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">alt  被拦 / 没活 / 起步前没过</text>
+<path d="M46,351 L55,351" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="56" y="340" width="71.65" height="16" rx="8" fill="#F5F0E8"/>
+<text x="91.825" y="348" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">else  放行</text>
+<path d="M58,586 L58,850" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M58,586 L67,586" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M58,850 L67,850" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="68" y="575" width="97.375" height="16" rx="8" fill="#EDF2F9"/>
+<text x="116.6875" y="583" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">alt  这一答没成</text>
+<path d="M58,686 L67,686" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="68" y="675" width="103.15" height="16" rx="8" fill="#F5F0E8"/>
+<text x="119.575" y="683" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">else  师傅答成了</text>
+<path d="M70,759 L70,848" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M70,759 L79,759" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M70,848 L79,848" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="80" y="748" width="187.15" height="16" rx="8" fill="#EDF2F9"/>
+<text x="173.575" y="756" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">loop  收齐结果再往下，一批有上限</text>
+<path d="M58,886 L58,925" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M58,886 L67,886" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<path d="M58,925 L67,925" fill="none" stroke="#1B3A6B" stroke-width="1.3"/>
+<rect x="68" y="875" width="170.875" height="16" rx="8" fill="#EDF2F9"/>
+<text x="153.4375" y="883" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">opt  师傅说完了，也没新话进门</text>
+<rect x="40" y="990" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="1005.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">除了拧螺丝的交回的结果直接落笔记，其余每句话都经领班的转一手。</text>
+<text x="40" y="1038" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">灰实线＝派活，蓝虚线＝回话；左侧括号标分支（alt / loop / opt）</text>
+<text x="40" y="1058" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">简化自 官方生命周期文档</text>
+</svg>

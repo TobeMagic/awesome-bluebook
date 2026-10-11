@@ -1,0 +1,28 @@
+<svg viewBox="0 0 680 354" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 35：派生的代价与两层缓存</title>
+<desc>中间一条「事件流」横线。上方挂 deriveMessages() 的 surface 缓存，管「这一步会话看到什么」；下方挂 ctx.sessionProjections 的单元缓存，管「某个域现在是什么值」。两条缓存都用虚线回指事件流，表示都由事件驱动。核心反差：派生的代价靠两层缓存压住，但两层都不落成第二份真源，删掉重算都对。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<path d="M60,150 L620,150" fill="none" stroke="#1B3A6B" stroke-width="2"/>
+<circle cx="60" cy="150" r="3" fill="#1B3A6B"/>
+<circle cx="620" cy="150" r="3" fill="#1B3A6B"/>
+<rect x="280" y="138" width="120" height="24" rx="12" fill="#1B3A6B"/>
+<text x="340" y="150" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">总账流水</text>
+<text x="340" y="174" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">每记一笔就往前推一次</text>
+<rect x="120" y="42" width="440" height="68" rx="10" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="140" y="66" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">抄件缓存</text>
+<text x="140" y="90" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">每份抄件首次用到时誊一次；对应账目改动才重誊</text>
+<path d="M200,112 L200,146" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<text x="210" y="130" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">记账驱动</text>
+<rect x="120" y="194" width="440" height="68" rx="10" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="140" y="218" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">登记簿缓存</text>
+<text x="140" y="242" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">只在总账上挂一个听差；每记一笔就更新各栏现值</text>
+<path d="M480,192 L480,154" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+<text x="490" y="174" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">记账驱动</text>
+<rect x="40" y="288" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="303.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">正主只有总账一份；两份影子都由记账驱动，随时能重长，撕了重算都对。</text>
+<text x="40" y="338" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">第一层管「这页能看到什么」，第二层管「某一栏现在是什么值」</text>
+</svg>

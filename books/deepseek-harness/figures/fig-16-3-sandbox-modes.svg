@@ -1,0 +1,27 @@
+<svg viewBox="0 0 680 318" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 42：沙箱的三档模式与两种强制完整性</title>
+<desc>SandboxMode 三档：read-only 只放行 /dev/null 之类接收器，workspace-write 再加工作区根与临时区，danger-full-access 绕开隔离、不走 ctx.sandbox。强制完整性分 full 与 partial。它只管文件效果。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="34" width="300" height="44" rx="6" fill="#EDF2F9"/>
+<text x="58" y="56" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">read-only</text>
+<text x="356" y="56" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">只放行 /dev/null 之类的接收器</text>
+<rect x="40" y="94" width="300" height="44" rx="6" fill="#D3DFF0"/>
+<text x="58" y="116" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">workspace-write</text>
+<text x="356" y="116" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">加工作区根与后端承诺的临时区</text>
+<rect x="40" y="154" width="300" height="44" rx="6" fill="#1B3A6B"/>
+<text x="58" y="176" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="start" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">danger-full-access</text>
+<text x="356" y="176" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">绕开隔离，不走 ctx.sandbox</text>
+<text x="628" y="130" font-size="11" fill="#5F5E5A" text-anchor="middle" transform="rotate(-90 628 130)">只管文件系统效果 · 网络与进程可见性不在范围内</text>
+<rect x="40" y="222" width="150" height="26" rx="13" fill="#0F6E56"/>
+<text x="115" y="235" font-size="11" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">full</text>
+<rect x="200" y="222" width="150" height="26" rx="13" fill="#A9C4E4"/>
+<text x="275" y="235" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">partial</text>
+<text x="366" y="235" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">旧内核 ABI 或后端子集 → 只部分强制</text>
+<rect x="40" y="264" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="279.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">沙箱管文件效果；网络与进程可见性不在它范围。</text>
+<text x="40" y="306" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">SandboxMode 三档 · 只有前两档会送进 ctx.sandbox · 简化自 官方沙箱说明</text>
+</svg>

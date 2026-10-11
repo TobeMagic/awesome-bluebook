@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 390" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 18：同一批包上的两张图</title>
+<desc>同一批包上叠两张图。上面是 package.json 的模块图，边连向一个包；下面是 inject 的服务图，边连向一个字符串 key。下图里那个 key 旁还挂着一个虚线框 disabled: true，说明包在、服务可以不在。核心反差：两张图看着像一张，其实不是。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="20" width="608" height="128" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="42" font-size="11.5" font-weight="600" fill="#0F6E56" text-anchor="start" dominant-baseline="central">安装关系</text>
+<rect x="70" y="70" width="150" height="46" rx="8" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="145" y="93" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">甲部门</text>
+<path d="M224,93 H326" fill="none" stroke="#5F5E5A" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="275" y="79" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">装机时要带上它</text>
+<rect x="330" y="70" width="180" height="46" rx="8" fill="#D3DFF0"/>
+<text x="420" y="93" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">乙部门</text>
+<text x="58" y="134" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">边连向一件设备：管安装期，答「装不装得上」。</text>
+<rect x="40" y="164" width="608" height="148" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="186" font-size="11.5" font-weight="600" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">事件往来</text>
+<rect x="70" y="214" width="150" height="46" rx="8" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="145" y="237" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">甲部门</text>
+<path d="M224,237 H296" fill="none" stroke="#1B3A6B" stroke-width="1.4" marker-end="url(#arb)"/>
+<text x="260" y="223" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">点名叫它</text>
+<rect x="300" y="214" width="170" height="46" rx="8" fill="#1B3A6B"/>
+<text x="385" y="237" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">「办事」这个名号</text>
+<rect x="500" y="208" width="138" height="58" rx="6" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="5 4"/>
+<text x="569" y="230" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">名册上划掉了</text>
+<text x="569" y="250" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">岗上没人</text>
+<text x="58" y="286" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">边连向一个名号：管开张之后，答「点名时人在不在」。</text>
+<rect x="40" y="328" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="343.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">两张图看着像一张，其实不重叠：边连的东西不同，还能分叉 —— 设备装上了，岗上可以没人。</text>
+<text x="40" y="376" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">安装关系答「装不装得上」，事件往来答「人在不在」；设备在、岗上可缺席（名册上划掉）</text>
+</svg>

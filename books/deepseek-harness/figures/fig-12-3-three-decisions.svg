@@ -1,0 +1,46 @@
+<svg viewBox="0 0 680 334" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 30：三个决策点在时序里的位置</title>
+<desc>三条泳道各标一个决策点。startsRequestSeries 卡在 agent/pre-step 的返回里；retry 卡在 agent/request-error；提示词准入发生在 step/start 之后，写成 system/message 事件。右侧竖线是轮次边界，三个决策点都在它左边、都不与它相交——核心反差：三个决策点全在轮次内部。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="34" width="560" height="64" rx="10" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="52" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">① startsRequestSeries —— 要不要开一串新请求</text>
+<rect x="40" y="112" width="560" height="64" rx="10" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="130" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">② retry —— 本次尝试失败后只重发，不重拼</text>
+<rect x="40" y="190" width="560" height="64" rx="10" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="56" y="208" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">③ 提示词准入 —— 走历史，不走请求体</text>
+<rect x="56" y="66" width="80" height="24" rx="5" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="96.0" y="78.0" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">turn/start</text>
+<rect x="154" y="66" width="112" height="24" rx="5" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="210.0" y="78.0" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">agent/pre-step</text>
+<path d="M138,78 L152,78" fill="none" stroke="#D8D6CD" stroke-width="1.0" marker-end="url(#ar)"/>
+<path d="M268,78 L282,78" fill="none" stroke="#D8D6CD" stroke-width="1.0" marker-end="url(#ar)"/>
+<rect x="284" y="66" width="140" height="24" rx="12" fill="#0F6E56"/>
+<text x="354" y="78" font-size="10.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">startsRequestSeries</text>
+<text x="436" y="78" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">enter 决策里带上这个布尔量</text>
+<rect x="56" y="144" width="80" height="24" rx="5" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="96.0" y="156.0" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">step/start</text>
+<rect x="154" y="144" width="140" height="24" rx="5" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="224.0" y="156.0" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">agent/request-error</text>
+<path d="M138,156 L152,156" fill="none" stroke="#D8D6CD" stroke-width="1.0" marker-end="url(#ar)"/>
+<path d="M296,156 L310,156" fill="none" stroke="#D8D6CD" stroke-width="1.0" marker-end="url(#ar)"/>
+<rect x="312" y="144" width="52" height="24" rx="12" fill="#0F6E56"/>
+<text x="338" y="156" font-size="10.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">retry</text>
+<text x="376" y="156" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">同一步骤内重发</text>
+<rect x="56" y="222" width="80" height="24" rx="5" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="96.0" y="234.0" font-size="10.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">step/start</text>
+<path d="M138,234 L152,234" fill="none" stroke="#D8D6CD" stroke-width="1.0" marker-end="url(#ar)"/>
+<rect x="154" y="222" width="108" height="24" rx="12" fill="#0F6E56"/>
+<text x="208" y="234" font-size="10.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">system/message</text>
+<text x="276" y="234" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">占 surface 第 0 号节点</text>
+<path d="M626,22 L626,258" fill="none" stroke="#1B3A6B" stroke-width="1.6"/>
+<circle cx="626" cy="22" r="3" fill="#1B3A6B"/>
+<circle cx="626" cy="258" r="3" fill="#1B3A6B"/>
+<text x="654" y="140" font-size="11" fill="#1B3A6B" text-anchor="middle" transform="rotate(-90 654 140)">轮次边界</text>
+<rect x="40" y="268" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="283.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">三个决策点都卡在轮次内部，一个都不碰右侧那条轮次边界。</text>
+<text x="40" y="320" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">位置来源：官方架构文档的轮次流程一节</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 680 224" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 45：复盘依据事件日志，不依据事后报告</title>
+<desc>左边是 agent 自述，属事后报告、反推意图，不能作为事实。右边是持久化事件日志 session-3eb796c2，带序号、可回放，是复盘的依据。复盘只走日志这一条路。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="60" width="250" height="74" rx="8" fill="#FFFFFF" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="165" y="84" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">agent 自述</text>
+<text x="165" y="106" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">事后报告，反推意图</text>
+<rect x="390" y="60" width="250" height="74" rx="8" fill="#1B3A6B"/>
+<text x="515" y="84" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">持久化事件日志</text>
+<text x="515" y="106" font-size="11" font-weight="400" fill="#C9DBF1" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">session-3eb796c2</text>
+<rect x="288" y="74" width="104" height="46" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="340" y="97" font-size="12.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">复盘</text>
+<path d="M290,97 H288" fill="none" stroke="#B4B2A9" stroke-width="1.2"/>
+<path d="M340,60 C340,40 200,40 180,56" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="206" y="34" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">不可作为事实</text>
+<path d="M428,97 H392" fill="none" stroke="#1B3A6B" stroke-width="1.6" marker-end="url(#arb)"/>
+<text x="410" y="82" font-size="10.5" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">依据</text>
+<rect x="40" y="168" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="183.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">复盘以事件日志为依据，不以事后报告反推意图。</text>
+<text x="40" y="210" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">证据来源 session-3eb796c2-5159-4686-affe-df8719f6f987 · 整理自 官方复盘 0003</text>
+</svg>

@@ -1,0 +1,56 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>style-ab-sample.md</title><style>
+body{background:#F5F0E8;color:#2C2C2A;font-family:system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+     margin:0;padding:40px 20px 80px;line-height:1.85}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:24px;color:#1B3A6B;margin:0 0 6px;line-height:1.4}
+h2{font-size:18px;color:#1B3A6B;margin:38px 0 12px;padding-bottom:6px;border-bottom:1px solid #E3E1D8}
+h3{font-size:15px;color:#1B3A6B;margin:26px 0 8px}
+p{margin:0 0 14px;font-size:15px}
+hr{border:0;border-top:1px solid #E3E1D8;margin:34px 0}
+ul{padding-left:22px;margin:0 0 14px}
+li{font-size:15px;margin:4px 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
+     background:#EFEDE6;padding:1px 5px;border-radius:3px}
+pre{background:#FBFAF7;border:1px solid #E3E1D8;border-radius:8px;padding:14px 16px;overflow-x:auto;margin:0 0 14px}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.7}
+table{border-collapse:collapse;width:100%;margin:0 0 14px;font-size:14px}
+th,td{border:1px solid #E3E1D8;padding:7px 10px;text-align:left}
+th{background:#EDF2F9;color:#1B3A6B;font-weight:600}
+figure{margin:20px 0;background:#fff;border:1px solid #E3E1D8;border-radius:10px;padding:18px 20px 12px}
+figure svg{display:block}
+figcaption{font-size:13px;line-height:1.7;margin-top:12px}
+.src{color:#5F5E5A}
+.tag{display:inline-block;font-size:12px;color:#5F5E5A;background:#EFEDE6;border-radius:4px;
+     padding:2px 8px;margin-bottom:20px}
+</style></head><body><div class='wrap'><span class='tag'>蓝宝书 · 片段预览 · SVG 内联</span><h1>文体分级样张：同一段内容的 A 级与 B 级</h1>
+<p>取 §03 里「一次工具调用的三道闸」这段内容，用两种级别各写一遍。</p>
+<p>判据只有一句：<strong>这句话理解错了，会不会害读者做错事？</strong> 会 → A 级；不会 → B 级。</p>
+<hr/>
+<h2>A 级 · 受控（~90% STE）</h2>
+<p>用于：机制描述、流水线步骤、检验清单、安全警示、图注。</p>
+<p>工具调用请求先进入 guard。guard 检查策略表。策略表拒绝该调用时，系统不执行调用。系统把拒绝事件写入会话日志。</p>
+<p>策略表放行该调用时，请求进入 approval。approval 等待人工批准。人工不批准时，系统不执行调用。</p>
+<p>人工批准后，请求进入 sandbox。sandbox 在受限进程里执行该调用。</p>
+<p>官方 SAFETY.zh.md 声明：本项目未做安全审计。沙箱、审批、权限控制都降低风险，不保证隔离。运行本项目前请备份数据。不要把敏感密钥交给本项目。</p>
+<hr/>
+<h2>B 级 · 讲解（~50% STE）</h2>
+<p>用于：章节开场、类比、过渡、小结。下面就是 §03 现在的写法。</p>
+<p>边界层 14 个包、3% 的代码，是全书最该认真读的一层。它管的是哪些事不能做：<code>sandbox</code> 把进程关进笼子，<code>credentials</code> 管密钥和授权。<code>guard</code> 给循环和工具加把关，<code>hooks</code> 跟 Claude Code、Codex 这些外部工具对接。</p>
+<p>先说清楚一件事。官方 <code>SAFETY.zh.md</code> 写得毫不含糊：这个项目还没做过安全审计。沙箱、审批、权限控制都只能降低风险，不保证隔离。</p>
+<p>官方自己的建议是最小权限。最好跑在一次性虚拟机或容器里。先备份，敏感密钥也别往里放。</p>
+<p>所以别看到 <code>sandbox</code> 就以为万事大吉。一次工具调用要过的三道闸是这样的：guard 先看策略让不让跑，审批再等人拍板。通过之后才放进 sandbox 的笼子里执行。前两道任何一个摇头，这次调用就不发生。</p>
+<p>这层代码少，因为它干的是刹车的活。</p>
+<p>刹车片从来都比发动机小。</p>
+<hr/>
+<h2>对照表</h2>
+<table><thead><tr><th>维度</th><th>A 级</th><th>B 级</th></tr></thead><tbody><tr><td>句长</td><td>全部 ≤25 字，实测最长 18 字</td><td>不限，实测最长 26 字</td></tr><tr><td>一句几个意思</td><td>一个</td><td>一到三个</td></tr><tr><td>条件位置</td><td>前置：「策略表拒绝该调用时，系统不执行调用。」</td><td>随意</td></tr><tr><td>类比</td><td>无</td><td>「刹车片从来都比发动机小。」</td></tr><tr><td>口语连接词</td><td>无</td><td>说白了 / 其实 / 先说清楚一件事</td></tr><tr><td>极短句落锤</td><td>无</td><td>「刹车片从来都比发动机小。」独立成段</td></tr><tr><td>同义轮换</td><td>执行 / 拒绝 / 批准 / 进入，各只用一种说法</td><td>允许</td></tr><tr><td>读起来的感觉</td><td>平，但不会误读</td><td>有劲，但要靠上下文</td></tr></tbody></table>
+<hr/>
+<h2>我的建议</h2>
+<p>一章里两种级别混着用，<strong>比例大约 A 3 : B 7</strong>。</p>
+<p>具体分配：机制、流水線、安全、图注、术语定义全部走 A 级；每节的头两句和结尾一句走 B 级，负责把读者拉进来、送出去。</p>
+<p><strong>不要反过来。</strong> 全是 A 级，书会变成维修手册，读三页就放下了；全是 B 级，关键机制处会留下歧义，读者照着做会做错。</p>
+<p><span class="src">〔本节来源〕</span></p>
+<ul><li>ASD-STE100《Simplified Technical English》Issue 9（2025-01-15 起为国际标准）：</li></ul>
+<p>程序句 ≤20 词、描述句 ≤25 词、段落 ≤6 句、一动作一动词、名词串 ≤3 词、主动语态、条件前置、模糊情态（should/may/might）改为确定表述</p>
+<ul><li>规范原文本身限定为英文；中文版为本书移植，见 <code>STYLE.md §二.2.11</code></li><li>A 级样张的事实内容出自 <code>docs/tool-execution-pipeline.zh.md</code> 与 <code>SAFETY.zh.md</code>，</li></ul>
+<p>溯源 commit <code>639ed015397290b3745d163aafe02ffee4aa3f84</code></p></div></body></html>

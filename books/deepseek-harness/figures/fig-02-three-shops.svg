@@ -1,0 +1,30 @@
+<svg viewBox="0 0 680 270" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>材料店、图纸铺、成品房</title>
+<desc>三种帮人盖房的店：材料店给材料自己盖，图纸铺给空架子盖完就拆，成品房拎包入住但门禁必装。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="30" width="190" height="150" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="75" y="48" width="120" height="34" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="135" y="65" font-size="13.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">材料店</text>
+<text x="135" y="108" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">木料、砖头、水泥</text>
+<text x="135" y="132" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">附一本说明书</text>
+<text x="135" y="156" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">怎么盖随买主便</text>
+<rect x="245" y="30" width="190" height="150" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="280" y="48" width="120" height="34" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="340" y="65" font-size="13.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">图纸铺</text>
+<text x="340" y="108" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">空架子立在那儿</text>
+<text x="340" y="132" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">血肉自己填</text>
+<text x="340" y="156" font-size="11.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">盖完，架子就拆</text>
+<rect x="450" y="30" width="190" height="150" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="485" y="48" width="120" height="34" rx="8" fill="#F5F0E8" stroke="#A9C4E4" stroke-width="1.0"/>
+<text x="545" y="65" font-size="13.5" font-weight="600" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">成品房</text>
+<text x="545" y="108" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">拎包入住</text>
+<text x="545" y="132" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">但门禁早就装好</text>
+<text x="545" y="156" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">不刷卡门都别想进</text>
+<rect x="40" y="202" width="600" height="48" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="216.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">前两家把决定权交出来；第三家把自己的规矩变成住户的规矩。</text>
+<text x="58" y="236.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">「有主见」，是它和前两家最大的分别。</text>
+</svg>

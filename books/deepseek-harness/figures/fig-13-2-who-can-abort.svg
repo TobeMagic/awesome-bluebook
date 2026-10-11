@@ -1,0 +1,74 @@
+<svg viewBox="0 0 680 354" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 32：这条链上谁能喊停</title>
+<desc>沿五个阶段各标一只表示「能不能喊停」的手。pre 有 deny / cancel，guards 有 reason，两只手能停；execute 的包装层是打叉的手，只能改 exec.signal，停不下来。链外还有两只手：审批在 pre 的 ask 处拒绝，外部调用方随时取消。核心反差：整条链上唯一停不下来的，是真正干活的 execute 包装层。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<rect x="40" y="40" width="104" height="44" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="92" y="62" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">登记</text>
+<rect x="169" y="40" width="104" height="44" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="221" y="62" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">审查</text>
+<rect x="298" y="40" width="104" height="44" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="350" y="62" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">放行</text>
+<rect x="427" y="40" width="104" height="44" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="479" y="62" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">执行</text>
+<rect x="556" y="40" width="104" height="44" rx="8" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="608" y="62" font-size="12" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">落账</text>
+<path d="M146,62 L167,62" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M275,62 L296,62" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M404,62 L425,62" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M533,62 L554,62" fill="none" stroke="#5F5E5A" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="204" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="210" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="216" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="222" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="202" y="108" width="26" height="22" rx="6" fill="#0F6E56"/>
+<rect x="196" y="112" width="8" height="12" rx="4" fill="#0F6E56"/>
+<rect x="333" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="339" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="345" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="351" y="96" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="331" y="108" width="26" height="22" rx="6" fill="#0F6E56"/>
+<rect x="325" y="112" width="8" height="12" rx="4" fill="#0F6E56"/>
+<rect x="462" y="96" width="4" height="16" rx="2" fill="#5F5E5A"/>
+<rect x="468" y="96" width="4" height="16" rx="2" fill="#5F5E5A"/>
+<rect x="474" y="96" width="4" height="16" rx="2" fill="#5F5E5A"/>
+<rect x="480" y="96" width="4" height="16" rx="2" fill="#5F5E5A"/>
+<rect x="460" y="108" width="26" height="22" rx="6" fill="#5F5E5A"/>
+<rect x="454" y="112" width="8" height="12" rx="4" fill="#5F5E5A"/>
+<path d="M452,92 L492,136" fill="none" stroke="#1B3A6B" stroke-width="2.2"/>
+<path d="M492,92 L452,136" fill="none" stroke="#1B3A6B" stroke-width="2.2"/>
+<rect x="73" y="96" width="38" height="34" rx="6" fill="none" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="3 3"/>
+<text x="92" y="113" font-size="11" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">—</text>
+<rect x="589" y="96" width="38" height="34" rx="6" fill="none" stroke="#D8D6CD" stroke-width="1.0" stroke-dasharray="3 3"/>
+<text x="608" y="113" font-size="11" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">—</text>
+<text x="92" y="156" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">先记账，不拦人</text>
+<text x="221" y="148" font-size="11" font-weight="600" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">能拒</text>
+<text x="221" y="164" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">只拦不放，能喊停</text>
+<text x="350" y="148" font-size="11" font-weight="600" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">能不放</text>
+<text x="350" y="164" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">把门的点头才过，能喊停</text>
+<text x="479" y="148" font-size="10.5" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">递家伙的喊不停</text>
+<text x="479" y="164" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">调得动闹钟，停不下这颗</text>
+<text x="608" y="156" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">定稿与观察</text>
+<rect x="40" y="186" width="608" height="40" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="56" y="190" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="62" y="190" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="68" y="190" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="74" y="190" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="54" y="202" width="26" height="22" rx="6" fill="#0F6E56"/>
+<rect x="48" y="206" width="8" height="12" rx="4" fill="#0F6E56"/>
+<text x="104" y="206" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">把门的——审查拿不准时报他；他不点头，这颗就拦下，能喊停</text>
+<rect x="40" y="232" width="608" height="40" rx="8" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="56" y="236" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="62" y="236" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="68" y="236" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="74" y="236" width="4" height="16" rx="2" fill="#0F6E56"/>
+<rect x="54" y="248" width="26" height="22" rx="6" fill="#0F6E56"/>
+<rect x="48" y="252" width="8" height="12" rx="4" fill="#0F6E56"/>
+<text x="104" y="252" font-size="11" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">外头下活的——随时收回这颗，能喊停；换个闹钟也切不断收回</text>
+<rect x="40" y="288" width="608" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="303.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">叫停不是无声的：先记账，后动手；拦下的、拧砸的、收回的，都归成同一张回话。</text>
+<text x="40" y="340" font-size="10.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">链上只有递家伙的那只手喊不停 · 简化自 官方工具流水线文档</text>
+</svg>

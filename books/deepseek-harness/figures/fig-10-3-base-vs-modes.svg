@@ -1,0 +1,28 @@
+<svg viewBox="0 0 680 412" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 27：共享核心比最重的模式层还薄</title>
+<desc>分组柱状对比 base 94 条与各模式层条目数：web-app 112、sdk-minimal 32、sdk-app 7、headless 5、acp-app 5。base 用强调色标出，并有一条虚线标出 base 的高度。共享核心比最重的模式层还薄。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<path d="M40,300 L660,300" fill="none" stroke="#B4B2A9" stroke-width="1.0"/>
+<path d="M40,98.57142857142858 L660,98.57142857142858" fill="none" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<rect x="60" y="98.57142857142858" width="50" height="201.42857142857142" rx="6" fill="#0F6E56"/>
+<text x="85.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">共享底板</text>
+<rect x="170" y="60.0" width="50" height="240.0" rx="6" fill="#A9C4E4"/>
+<text x="195.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">满编</text>
+<rect x="280" y="231.42857142857144" width="50" height="68.57142857142857" rx="6" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0" stroke-dasharray="4 3"/>
+<text x="305.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">不合群</text>
+<rect x="390" y="285.0" width="50" height="15.0" rx="6" fill="#A9C4E4"/>
+<text x="415.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">带徒弟</text>
+<rect x="500" y="289.2857142857143" width="50" height="10.714285714285714" rx="6" fill="#A9C4E4"/>
+<text x="525.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">轻装</text>
+<rect x="610" y="289.2857142857143" width="50" height="10.714285714285714" rx="6" fill="#A9C4E4"/>
+<text x="635.0" y="318" font-size="11" font-weight="600" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">招新</text>
+<text x="654" y="88" font-size="11" font-weight="400" fill="#0F6E56" text-anchor="end" dominant-baseline="central">底板的高度</text>
+<text x="390" y="338" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">各编制自己的薄清单</text>
+<rect x="40" y="356" width="620" height="30" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="371.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">共享底板比最重的那份编制还薄：会不一样的行，都被推到各编制自己的纸上。</text>
+<text x="40" y="398" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">条高只表厚薄，不标数字 · 虚线框那份不踩底板，自己从头到尾写全</text>
+</svg>

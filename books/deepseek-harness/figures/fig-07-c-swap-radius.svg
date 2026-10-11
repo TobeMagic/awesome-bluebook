@@ -1,0 +1,47 @@
+<svg viewBox="0 0 680 324" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>换掉他，要动几个人</title>
+<desc>左图小张被六个人直接点名，他一请假六个人全得换着找；右图所有人都只认排班表，换人就改表上一行。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="26" font-size="12.5" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">直接点名</text>
+<text x="350" y="26" font-size="12.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">隔一张排班表</text>
+<rect x="40" y="42" width="290" height="196" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<rect x="350" y="42" width="290" height="196" rx="10" fill="#FCFCFA" stroke="#D8D6CD" stroke-width="1.0"/>
+<path d="M76,84 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<path d="M185,70 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<path d="M294,84 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<path d="M76,212 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<path d="M185,226 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<path d="M294,212 L185,148" fill="none" stroke="#A9C4E4" stroke-width="1.2"/>
+<rect x="135" y="129" width="100" height="38" rx="8" fill="#1B3A6B"/>
+<text x="185" y="148" font-size="12.5" font-weight="400" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">小张</text>
+<rect x="46" y="72" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="155" y="58" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="264" y="72" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="46" y="200" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="155" y="214" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="264" y="200" width="60" height="24" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<rect x="368" y="62" width="72" height="28" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="404" y="76" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">找人的人</text>
+<path d="M404,90 L404,126" fill="none" stroke="#A9C4E4" stroke-width="1.2" marker-end="url(#arb)"/>
+<rect x="459" y="62" width="72" height="28" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="495" y="76" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">找人的人</text>
+<path d="M495,90 L495,126" fill="none" stroke="#A9C4E4" stroke-width="1.2" marker-end="url(#arb)"/>
+<rect x="550" y="62" width="72" height="28" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="586" y="76" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">找人的人</text>
+<path d="M586,90 L586,126" fill="none" stroke="#A9C4E4" stroke-width="1.2" marker-end="url(#arb)"/>
+<rect x="390" y="126" width="200" height="34" rx="8" fill="#F5F0E8" stroke="#A9C4E4" stroke-width="1.0"/>
+<text x="490" y="143" font-size="12.5" font-weight="400" fill="#1B3A6B" text-anchor="middle" dominant-baseline="central">排班表</text>
+<path d="M440,160 L440,196" fill="none" stroke="#A9C4E4" stroke-width="1.2" marker-end="url(#arb)"/>
+<rect x="396" y="196" width="88" height="28" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="440" y="210" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">顶上的人</text>
+<path d="M540,160 L540,196" fill="none" stroke="#A9C4E4" stroke-width="1.2" marker-end="url(#arb)"/>
+<rect x="496" y="196" width="88" height="28" rx="5" fill="#FBFAF7" stroke="#B4B2A9" stroke-width="1.0"/>
+<text x="540" y="210" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">顶上的人</text>
+<rect x="40" y="256" width="600" height="48" rx="6" fill="#F5F0E8" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="58" y="270.0" font-size="11.5" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">左边：小张一请假，六个人全得换着找。</text>
+<text x="58" y="290.0" font-size="11.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">右边：谁都只认表上那行字，换人就改那行。</text>
+</svg>

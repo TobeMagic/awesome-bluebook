@@ -1,0 +1,48 @@
+<svg viewBox="0 0 680 272" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 7：代码量与被依赖度的反差</title>
+<desc>左栏按代码量占比排序，client 占 31.7% 最高；右栏按被依赖度排序，session 被 101 个包依赖。两栏排序完全不同，说明代码量不等于重要性。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+</defs>
+<text x="40" y="24" font-size="14" font-weight="500" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">代码量占比</text>
+<text x="360" y="24" font-size="14" font-weight="500" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">被依赖度（多少个包依赖它）</text>
+<text x="40" y="57.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">client</text>
+<rect x="124" y="48" width="130.0" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="57.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">31.7%</text>
+<text x="40" y="91.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">experimental</text>
+<rect x="124" y="82" width="34.03785488958991" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="91.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">8.3%</text>
+<text x="40" y="125.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">api</text>
+<rect x="124" y="116" width="25.01577287066246" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="125.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">6.1%</text>
+<text x="40" y="159.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">session</text>
+<rect x="124" y="150" width="20.914826498422713" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="159.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">5.1%</text>
+<text x="40" y="193.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">core</text>
+<rect x="124" y="184" width="20.914826498422713" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="193.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">5.1%</text>
+<text x="40" y="227.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">llm</text>
+<rect x="124" y="218" width="15.583596214511042" height="18" rx="3" fill="#85B7EB"/>
+<text x="258" y="227.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">3.8%</text>
+<line x1="336" y1="40" x2="336" y2="244" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="3 3"/>
+<text x="360" y="57.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">session</text>
+<rect x="444" y="48" width="130.01063829787233" height="18" rx="3" fill="#1B3A6B"/>
+<text x="578" y="57.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">101</text>
+<text x="360" y="91.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">llm</text>
+<rect x="444" y="82" width="120.99999999999999" height="18" rx="3" fill="#5DCAA5"/>
+<text x="578" y="91.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">94</text>
+<text x="360" y="125.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">agent</text>
+<rect x="444" y="116" width="97.82978723404254" height="18" rx="3" fill="#5DCAA5"/>
+<text x="578" y="125.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">76</text>
+<text x="360" y="159.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">brand</text>
+<rect x="444" y="150" width="77.23404255319149" height="18" rx="3" fill="#5DCAA5"/>
+<text x="578" y="159.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">60</text>
+<text x="360" y="193.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">tools</text>
+<rect x="444" y="184" width="70.79787234042553" height="18" rx="3" fill="#5DCAA5"/>
+<text x="578" y="193.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">55</text>
+<text x="360" y="227.0" font-size="12" font-weight="400" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">util-values</text>
+<rect x="444" y="218" width="60.49999999999999" height="18" rx="3" fill="#5DCAA5"/>
+<text x="578" y="227.0" font-size="12" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">47</text>
+<text x="40" y="256" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">两栏各按本栏最大值归一化 · 量纲不同，只看相对关系 · 316 个包 / 944,704 行 /</text>
+</svg>

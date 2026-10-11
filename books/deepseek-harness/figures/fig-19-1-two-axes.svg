@@ -1,0 +1,29 @@
+<svg viewBox="0 0 680 320" width="100%" role="img" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<title>图 49：可组合性有两个正交维度</title>
+<desc>一个二维坐标。横轴是时间可组合性，管装和卸，右端挂可逆效应 revertible effects，对应 ctx.effect()；纵轴是空间可组合性，管谁需要谁，上端挂响应式余效应 reactive coeffects，对应 inject。Cordis 落在右上象限；另外三个象限分别是卸得干净但顺序写死、依赖能声明但卸不干净、两样都不成立。两根轴互不推导。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#5F5E5A"/></marker>
+  <marker id="arb" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#1B3A6B"/></marker>
+  <marker id="art" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0,1 L9,5 L0,9 Z" fill="#0F6E56"/></marker>
+</defs>
+<text x="40" y="26" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="start" dominant-baseline="central">空间可组合性 · 能声明并响应式管理依赖</text>
+<text x="440" y="26" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="start" dominant-baseline="central">reactive coeffects / inject</text>
+<path d="M340,284 L340,44" fill="none" stroke="#1B3A6B" stroke-width="1.2" marker-end="url(#arb)"/>
+<path d="M56,170 L620,170" fill="none" stroke="#1B3A6B" stroke-width="1.2" marker-end="url(#arb)"/>
+<circle cx="340" cy="170" r="3" fill="#5F5E5A"/>
+<text x="616" y="150" font-size="10.5" font-weight="400" fill="#0F6E56" text-anchor="end" dominant-baseline="central">revertible effects / ctx.effect()</text>
+<text x="616" y="186" font-size="11" font-weight="400" fill="#1B3A6B" text-anchor="end" dominant-baseline="central">时间可组合性 · 组件移除时能完全撤销副作用</text>
+<rect x="84" y="76" width="240" height="60" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="98" y="98" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">依赖能声明，卸不干净</text>
+<text x="98" y="118" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">顺序交给系统，注册没配撤销</text>
+<rect x="356" y="76" width="240" height="60" rx="6" fill="#EDF2F9" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="370" y="98" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">Cordis：两维都落地</text>
+<text x="370" y="118" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">可逆效应与响应式余效应同时成立</text>
+<rect x="356" y="194" width="240" height="60" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="370" y="216" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">卸得干净，顺序写死</text>
+<text x="370" y="236" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">启动脚本里一串手写 init 调用</text>
+<rect x="84" y="194" width="240" height="60" rx="6" fill="#FBFAF7" stroke="#D8D6CD" stroke-width="1.0"/>
+<text x="98" y="216" font-size="11.5" font-weight="600" fill="#2C2C2A" text-anchor="start" dominant-baseline="central">两样都不成立</text>
+<text x="98" y="236" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">单体加钩子：插件是外挂</text>
+<text x="40" y="306" font-size="11" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">两根轴互不推导：修好一个不会顺手修好另一个 · 图据 本书对那篇论文的整理</text>
+</svg>
