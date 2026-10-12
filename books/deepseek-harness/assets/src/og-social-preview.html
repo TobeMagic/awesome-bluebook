@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Blue Book 01 · DeepSeek Harness — Social Preview</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:640px; overflow:hidden; }
+  body {
+    background:#F5F0E8;
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+    color:#2C2C2A;
+    position:relative;
+  }
+  .left { position:absolute; left:72px; top:78px; width:690px; }
+  .brand { font-size:17px; letter-spacing:5px; color:#5F5E5A; font-weight:600; }
+  .brand .dot { color:#0F6E56; }
+  .title {
+    margin-top:30px; font-size:74px; line-height:1.06; font-weight:700;
+    color:#1B3A6B; letter-spacing:-1px;
+  }
+  .sub { margin-top:20px; font-size:31px; line-height:1.35; color:#2C2C2A; font-weight:600; }
+  .hook { margin-top:22px; font-size:22px; line-height:1.6; color:#5F5E5A; }
+  .rule { margin-top:38px; width:150px; height:3px; background:#0F6E56; }
+  .chips { margin-top:30px; }
+  .chip {
+    display:inline-block; font-size:19px; color:#1B3A6B; font-weight:600;
+    border:1.5px solid #1B3A6B; border-radius:999px;
+    padding:8px 20px; margin:0 12px 14px 0;
+  }
+  .author { position:absolute; right:72px; bottom:60px; font-size:19px; color:#5F5E5A; letter-spacing:2px; }
+  .deco { position:absolute; right:96px; top:118px; }
+  .wm {
+    position:absolute; left:0; top:0; width:1280px; height:640px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><text x='20' y='60' transform='rotate(-22 20 60)' font-family='Microsoft YaHei' font-size='26' fill='%231B3A6B' opacity='0.055'>计算机魔术师</text><text x='20' y='220' transform='rotate(-22 20 220)' font-family='Microsoft YaHei' font-size='26' fill='%231B3A6B' opacity='0.055'>计算机魔术师</text></svg>");
+    pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <div class="wm"></div>
+
+  <div class="left">
+    <div class="brand">蓝宝书 BLUE BOOK<span class="dot"> · </span>第 01 本</div>
+    <div class="title">DeepSeek Harness</div>
+    <div class="sub">一切皆插件：一个 AI 外壳是怎么长起来的</div>
+    <div class="hook">模型负责想，外壳负责让它够得着真实世界。<br>不教你怎么装，教你怎么看懂——看完能照着造一个。</div>
+    <div class="rule"></div>
+    <div class="chips">
+      <span class="chip">序章 + 17 节 + 3 附录</span>
+      <span class="chip">42 张手绘图</span>
+      <span class="chip">不用会写代码</span>
+    </div>
+  </div>
+
+  <svg class="deco" width="352" height="404" viewBox="0 0 352 404" role="img">
+    <title>内核留空，六种能力并列</title>
+    <!-- 中央空心内核（虚线圈，里面没有东西） -->
+    <circle cx="176" cy="202" r="58" fill="none" stroke="#1B3A6B" stroke-width="2.5" stroke-dasharray="7 6"/>
+    <text x="176" y="208" text-anchor="middle" font-family="Microsoft YaHei" font-size="15" fill="#5F5E5A">留空</text>
+
+    <!-- 六个外围方块：能力 -->
+    <g fill="#F5F0E8" stroke-width="2">
+      <rect x="130" y="24"  width="92" height="52" rx="9" stroke="#1B3A6B"/>
+      <rect x="272" y="104" width="80" height="52" rx="9" stroke="#0F6E56"/>
+      <rect x="272" y="248" width="80" height="52" rx="9" stroke="#1B3A6B"/>
+      <rect x="130" y="328" width="92" height="52" rx="9" stroke="#1B3A6B"/>
+      <rect x="0"   y="248" width="80" height="52" rx="9" stroke="#1B3A6B"/>
+      <rect x="0"   y="104" width="80" height="52" rx="9" stroke="#1B3A6B"/>
+    </g>
+    <g font-family="Microsoft YaHei" font-size="14" fill="#2C2C2A" text-anchor="middle">
+      <text x="176" y="55">模型</text>
+      <text x="312" y="135">工具</text>
+      <text x="312" y="279">会话</text>
+      <text x="176" y="359">记录</text>
+      <text x="40"  y="279">权限</text>
+      <text x="40"  y="135">循环</text>
+    </g>
+
+    <!-- 细连线：能力之间的来往，全部绕过中心 -->
+    <g stroke="#0F6E56" stroke-width="1.6" fill="none">
+      <path d="M222 50 H266 Q286 50 286 76 V104"/>
+      <path d="M312 156 V248"/>
+      <path d="M272 274 H236 Q222 274 222 292 V328"/>
+      <path d="M130 354 H110 Q60 354 60 322 V300"/>
+      <path d="M40 248 V156"/>
+      <path d="M80 130 H92 Q112 130 112 108 V76 Q112 50 130 50"/>
+    </g>
+  </svg>
+
+  <div class="author">计算机魔术师 著</div>
+</body>
+</html>
