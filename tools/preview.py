@@ -54,7 +54,7 @@ def inline(s: str) -> str:
     return s
 
 
-def render(md: str, base_dir: str) -> str:
+def render(md: str, base_dir: str, inline_svg: bool = True) -> str:
     lines = md.split("\n")
     out: list[str] = []
     i = 0
@@ -103,7 +103,7 @@ def render(md: str, base_dir: str) -> str:
             alt, rel = m.group(1), m.group(2)
             fp = os.path.join(base_dir, rel.replace("/", os.sep))
             parts = []
-            if rel.lower().endswith(".svg") and os.path.exists(fp):
+            if inline_svg and rel.lower().endswith(".svg") and os.path.exists(fp):
                 parts.append(open(fp, encoding="utf-8").read().strip())
             else:
                 parts.append(f'<img src="{rel}" alt="{alt}" width="100%"/>')
