@@ -77,11 +77,19 @@ figcaption{font-size:13px;line-height:1.7;margin-top:12px;color:var(--gray)}
 @media print{
   body{background:#fff}
   .page{max-width:none}
-  .cover{min-height:auto;height:100vh}
-  figure{break-inside:avoid;background:#fff}
-  pre,table{break-inside:avoid}
-  h1,h2,h3{break-after:avoid}
+  .cover{min-height:auto;height:100vh;break-after:page}
   .toc{break-after:page}
+  /* 每部、每节都从新的一页开始，这是书的分页 */
+  .part-open{break-before:page;break-inside:avoid}
+  section.sec{break-before:page}
+  /* 大图整块不跨页：部题图、正文图、SVG 一律不许被拦腰切开 */
+  .part-open .front{break-inside:avoid}
+  figure{break-inside:avoid;background:#fff}
+  /* 超过一页高的图（如时序图）按页高缩放，不许拦腰切 */
+  figure svg{break-inside:avoid;max-width:100%;max-height:92vh;width:auto;height:auto}
+  pre,table,blockquote{break-inside:avoid}
+  tr{break-inside:avoid}
+  h1,h2,h3{break-after:avoid}
 }
 @media (max-width:680px){
   .wrap{padding:32px 20px 64px}
